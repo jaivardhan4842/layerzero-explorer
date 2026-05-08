@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LZ DVN Explorer — Aave Pathway Audit</title>
+<style>
+:root {
+  --bg:        #0c0e12;
+  --card:     #121A2E;
+  --bord:     #1f2530;
+  --muted:    #8a92a3;
+  --text:     #E8EEF9;
+  --link:     #8ab8ff;
+  --green:    #5af066;
+  --yellow:   #ffcc66;
+  --red:      #ff7878;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 28px 32px;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+}
+h1 { margin: 0 0 6px; font-size: 22px; font-weight: 600; }
+.sub { color: var(--muted); margin: 0 0 24px; max-width: 900px; }
+.filters {
+  display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 18px;
+}
+.filters label {
+  display: flex; flex-direction: column; gap: 4px;
+  font-size: 12px; color: var(--muted);
+}
+select {
+  background: var(--card); color: var(--text);
+  border: 1px solid var(--bord); border-radius: 5px;
+  padding: 7px 12px; min-width: 180px; font-size: 13px;
+  font-family: inherit;
+}
+select:focus { outline: 1px solid var(--link); }
+
+#count { font-size: 13px; color: var(--muted); margin: 8px 0 14px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead th {
+  background: var(--card); padding: 10px 12px; text-align: left;
+  font-weight: 600; border-bottom: 1px solid var(--bord);
+  position: sticky; top: 0; z-index: 1;
+}
+tbody td {
+  padding: 10px 12px; border-bottom: 1px solid var(--bord);
+  vertical-align: top;
+}
+tbody tr:hover { background: rgba(255,255,255,0.02); }
+
+.addr, code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.dot { font-size: 11px; }
+.green  { color: var(--green); }
+.yellow { color: var(--yellow); }
+.red    { color: var(--red); }
+
+.tag {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 10px;
+  font-size: 11px;
+  background: var(--card);
+  color: var(--muted);
+}
+.dvn-list { line-height: 1.7; }
+.right { text-align: right; }
+.pin-yes { color: var(--green); }
+.pin-no  { color: var(--red); }
+.pin-no::before { content: "✕ "; font-weight: 700; }
+
+footer {
+  margin-top: 32px; padding-top: 16px;
+  border-top: 1px solid var(--bord); color: var(--muted);
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<h1>LayerZero DVN Explorer</h1>
+<p class="sub">
+  Aave-listed cross-chain OFT routes from Ethereum to supported destination chains, filtered to issuer-approved bridging pathways only. Third-party or generic bridge providers are excluded.
+</p>
+
+<div class="filters">
+  <label>Asset
+    <select id="f-asset"><option value="">All</option></select>
+  </label>
+  <label>Chain
+    <select id="f-chain"><option value="">All</option></select>
+  </label>
+  <label>Issuer
+    <select id="f-issuer"><option value="">All</option></select>
+  </label>
+  <label>Asset Status on Aave
+    <select id="f-status">
+      <option value="🟢" selected>Supported</option>
+      <option value="🟡">Asset Unsupported</option>
+      <option value="🔴">Aave Unavailable</option>
+      <option value="">All</option>
+    </select>
+  </label>
+</div>
+
+<div id="count">—</div>
+
+<table>
+<thead><tr>
+  <th></th>
+  <th>Chain</th>
+  <th>Asset</th>
+  <th>Issuer</th>
+  <th>OFT Address (Eth)</th>
+  <th>Required DVN</th>
+  <th>DVN Providers</th>
+  <th>Recv Library Pinned</th>
+  <th class="right">Supply on Aave V3</th>
+</tr></thead>
+<tbody id="tbody"></tbody>
+</table>
+
+<footer id="meta">Loading…</footer>
+
+<!-- data.js is the inline-global flavour that works on file://. data.json
+     is also written as a static API consumable. The dashboard prefers the
+     inline global and only falls back to fetch() if it's missing. -->
+<script src="data.js"></script>
+<script>
+// Block-explorer URL builder. Keys are normalised chain names — see normChain().
+// Most EVM explorers use /address/ or /token/ ; we use /address/ as it works for
+// both EOAs and contracts. Non-EVM chains use whatever shape they expose.
+const EXPLORERS = {
+  ethereum:        'https://etherscan.io/address/',
+  arbitrum:        'https://arbiscan.io/address/',
+  optimism:        'https://optimistic.etherscan.io/address/',
+  base:            'https://basescan.org/address/',
+  polygon:         'https://polygonscan.com/address/',
+  bsc:             'https://bscscan.com/address/',
+  avalanche:       'https://snowtrace.io/address/',
+  mantle:          'https://mantlescan.xyz/address/',
+  plasma:          'https://plasmascan.to/address/',
+  linea:           'https://lineascan.build/address/',
+  ink:             'https://explorer.inkonchain.com/address/',
+  scroll:          'https://scrollscan.com/address/',
+  zksync:          'https://explorer.zksync.io/address/',
+  gnosis:          'https://gnosisscan.io/address/',
+  sonic:           'https://sonicscan.org/address/',
+  soneium:         'https://soneium.blockscout.com/address/',
+  megaeth:         'https://www.megaexplorer.xyz/address/',
+  celo:            'https://celoscan.io/address/',
+  metis:           'https://andromeda-explorer.metis.io/address/',
+  xlayer:          'https://www.okx.com/web3/explorer/xlayer/address/',
+  aptos:           'https://explorer.aptoslabs.com/account/',
+  solana:          'https://solscan.io/account/',
+  berachain:       'https://berascan.com/address/',
+  sei:             'https://seitrace.com/address/',
+  tac:             'https://explorer.tac.build/address/',
+  fantom:          'https://ftmscan.com/address/',
+  blast:           'https://blastscan.io/address/',
+  fraxtal:         'https://fraxscan.com/address/',
+  mode:            'https://explorer.mode.network/address/',
+  manta:           'https://pacific-explorer.manta.network/address/',
+  morph:           'https://explorer.morphl2.io/address/',
+  zircuit:         'https://explorer.zircuit.com/address/',
+  swell:           'https://explorer.swellnetwork.io/address/',
+  kava:            'https://explorer.kava.io/address/',
+  ton:             'https://tonviewer.com/',
+  tron:            'https://tronscan.org/#/address/',
+  hyperevm:        'https://hyperliquid.cloud.blockscout.com/address/',
+  unichain:        'https://uniscan.xyz/address/',
+  rootstock:       'https://explorer.rootstock.io/address/',
+  bob:             'https://explorer.gobob.xyz/address/',
+  telosevm:        'https://www.teloscan.io/address/',
+  flare:           'https://flarescan.com/address/',
+  flow:            'https://evm.flowscan.io/address/',
+  abstract:        'https://abscan.org/address/',
+  ape:             'https://apescan.io/address/',
+  taiko:           'https://taikoscan.io/address/',
+  fuse:            'https://explorer.fuse.io/address/',
+  gravity:         'https://explorer.gravity.xyz/address/',
+  kaia:            'https://kaiascan.io/account/',
+  core:            'https://scan.coredao.org/address/',
+  near:            'https://explorer.aurora.dev/address/',
+  'polygon-zkevm': 'https://zkevm.polygonscan.com/address/',
+  hemi:            'https://explorer.hemi.xyz/address/',
+  iota:            'https://explorer.evm.iota.org/address/',
+  'rari-chain':    'https://mainnet.explorer.rarichain.org/address/',
+};
+
+function normChain(name) {
+  let s = (name || '').toLowerCase().trim();
+  s = s.replace(' mainnet', '').replace('-mainnet', '');
+  s = s.replace(' (formerly klaytn)', '').replace(' (bsc)', '');
+  s = s.replace(' smart chain', '');
+  s = s.replace(' era', '');
+  const map = {
+    'op':'optimism','opt':'optimism','arb':'arbitrum','avax':'avalanche',
+    'eth':'ethereum','bnb':'bsc','binance':'bsc',
+    'zkconsensys':'linea','x layer':'xlayer','near aurora':'near',
+    'evm on flow':'flow','polygon zkevm':'polygon-zkevm',
+    'rari chain':'rari-chain',
+  };
+  return (map[s] || s).trim();
+}
+
+function explorer(chain, addr) {
+  if (!addr) return '';
+  const base = EXPLORERS[normChain(chain)];
+  if (!base) return null;
+  return base + addr;
+}
+
+function ethExplorer(addr) { return EXPLORERS.ethereum + addr; }
+
+function fmtUsd(v) {
+  if (!v || v === 0) return '<span class="addr" style="color:var(--muted)">-</span>';
+  if (v >= 1e9) return '$' + (v/1e9).toFixed(2) + 'B';
+  if (v >= 1e6) return '$' + (v/1e6).toFixed(2) + 'M';
+  if (v >= 1e3) return '$' + (v/1e3).toFixed(1) + 'K';
+  return '$' + Math.round(v).toLocaleString();
+}
+
+function shortAddr(a) {
+  if (!a) return '';
+  return a.slice(0, 6) + '…' + a.slice(-4);
+}
+
+function dvnLink(chain, dvn) {
+  // DVN providers operate on every chain - resolve the destination-chain
+  // deployment from LZ metadata (carried in dvn.dstAddress) and link there.
+  // Fall back to the Ethereum address if the destination chain has no
+  // entry for that DVN's canonical name (rare but possible for new chains).
+  const name = dvn.name || 'Unknown';
+  const dstAddr = (dvn.dstAddress || '').toLowerCase();
+  const ethAddr = (dvn.ethAddress || dvn.address || '').toLowerCase();
+  let href = null, title = ethAddr;
+  if (dstAddr) {
+    href  = explorer(chain, dstAddr);
+    title = dstAddr + '  (Ethereum: ' + ethAddr + ')';
+  }
+  if (!href) href = ethExplorer(ethAddr);
+  if (!href) return '<span title="' + title + '">' + name + '</span>';
+  return '<a href="' + href + '" target="_blank" rel="noopener" title="'
+       + title + '">' + name + '</a>';
+}
+
+function assetLink(chain, addr, sym) {
+  const url = explorer(chain, addr);
+  if (!url) return sym + ' <span class="addr" style="color:var(--muted)">' + shortAddr(addr) + '</span>';
+  return '<a href="' + url + '" target="_blank" rel="noopener">' + sym + '</a>'
+       + ' <span class="addr" style="color:var(--muted)">' + shortAddr(addr) + '</span>';
+}
+
+function statusClass(s) {
+  if (s === '🟢') return 'green';
+  if (s === '🟡') return 'yellow';
+  if (s === '🔴') return 'red';
+  return '';
+}
+
+let DATA = [];
+
+function rowHtml(d) {
+  const dvns = (d.requiredDVNs || []).map(x => dvnLink(d.chain, x)).join(', ');
+  const optBlurb = (d.optionalCount > 0)
+    ? ' <span class="tag" title="Optional set: ' + d.optionalCount + ' DVNs, threshold ' + d.optionalThreshold + '">+ ' + d.optionalThreshold + '/' + d.optionalCount + ' opt</span>'
+    : '';
+  const ofturl = ethExplorer(d.sendContract);
+  // Recv-lib pinning. yes (pinned) -> green check label; default -> red X
+  // 'LZ Default'; empty/error -> em-dash.
+  let pin = '<span style="color:var(--muted)">-</span>';
+  if (d.recvLibPinned === 'yes') {
+    pin = '<span class="pin-yes" title="setReceiveLibrary already called - migration risk mitigated">Yes</span>';
+  } else if (d.recvLibPinned === 'default') {
+    pin = '<span class="pin-no" title="OApp inherits LZ default receive library; exposed to LZ owner-key migration">LZ Default</span>';
+  }
+  return '<tr>'
+       + '<td><span class="dot ' + statusClass(d.status) + '">' + (d.status || '') + '</span></td>'
+       + '<td>' + d.chain + '</td>'
+       + '<td>' + assetLink(d.chain, d.remoteContract, d.asset) + '</td>'
+       + '<td>' + d.issuer + '</td>'
+       + '<td><a href="' + ofturl + '" target="_blank" rel="noopener" class="addr">'
+       +   shortAddr(d.sendContract) + '</a></td>'
+       + '<td>' + d.requiredCount + '/0' + optBlurb + '</td>'
+       + '<td class="dvn-list">' + dvns + '</td>'
+       + '<td>' + pin + '</td>'
+       + '<td class="right">' + fmtUsd(d.totalSupplyUSD) + '</td>'
+       + '</tr>';
+}
+
+function render() {
+  const fa = document.getElementById('f-asset').value;
+  const fc = document.getElementById('f-chain').value;
+  const fi = document.getElementById('f-issuer').value;
+  const fs = document.getElementById('f-status').value;
+  const filtered = DATA.filter(d =>
+    (!fa || d.asset === fa) &&
+    (!fc || d.chain === fc) &&
+    (!fi || d.issuer === fi) &&
+    (!fs || d.status === fs)
+  );
+  document.getElementById('tbody').innerHTML = filtered.map(rowHtml).join('');
+  document.getElementById('count').textContent =
+    filtered.length + ' pathway' + (filtered.length === 1 ? '' : 's');
+}
+
+function uniq(xs) { return [...new Set(xs)].sort(); }
+
+function init(payload) {
+  DATA = payload.rows || [];
+  const fa = document.getElementById('f-asset');
+  const fc = document.getElementById('f-chain');
+  const fi = document.getElementById('f-issuer');
+  uniq(DATA.map(d => d.asset)).forEach(a => {
+    const o = document.createElement('option'); o.value = a; o.textContent = a;
+    fa.appendChild(o);
+  });
+  uniq(DATA.map(d => d.chain)).forEach(c => {
+    const o = document.createElement('option'); o.value = c; o.textContent = c;
+    fc.appendChild(o);
+  });
+  uniq(DATA.map(d => d.issuer).filter(Boolean)).forEach(i => {
+    const o = document.createElement('option'); o.value = i; o.textContent = i;
+    fi.appendChild(o);
+  });
+  ['f-asset','f-chain','f-issuer','f-status'].forEach(id =>
+    document.getElementById(id).addEventListener('change', render));
+  render();
+  document.getElementById('meta').textContent =
+    'Last updated: ' + (payload.lastUpdated || 'unknown');
+}
+
+// Prefer the inline global (works on file://). Fall back to fetch only when
+// the page is served via http:// and data.js wasn't loaded for some reason.
+if (window.__LZ_DVN_DATA__) {
+  init(window.__LZ_DVN_DATA__);
+} else {
+  fetch('data.json').then(r => r.json()).then(init).catch(err => {
+    document.getElementById('meta').textContent =
+      'Failed to load data.json: ' + err.message +
+      '. If you are opening the file directly, make sure data.js is in the same folder.';
+  });
+}
+</script>
+</body>
+</html>
