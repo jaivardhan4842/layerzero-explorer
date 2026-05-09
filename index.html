@@ -100,7 +100,7 @@ footer {
   <label>Asset
     <select id="f-asset"><option value="">All</option></select>
   </label>
-  <label>Chain
+  <label>Market
     <select id="f-chain"><option value="">All</option></select>
   </label>
   <label>Issuer
@@ -114,20 +114,33 @@ footer {
       <option value="">All</option>
     </select>
   </label>
+  <label style="flex-direction:row;align-items:center;gap:8px;">
+    <input type="checkbox" id="f-eth" checked>
+    <span>Show Ethereum exposure</span>
+  </label>
 </div>
 
-<div id="count">—</div>
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin:8px 0 14px;">
+  <div>
+    <div id="count">—</div>
+    <div id="total-exposure" style="font-size:14px;font-weight:600;margin-top:4px;color:var(--text);">—</div>
+  </div>
+  <div style="font-size:12px;color:var(--muted);text-align:right;">
+    *Indirect exposure as an asset is natively issued on Ethereum, and the DVN/Issuer config is for the OFT
+  </div>
+</div>
 
 <table>
 <thead><tr>
   <th></th>
-  <th>Chain</th>
+  <th>Market</th>
   <th>Asset</th>
   <th>Issuer</th>
   <th>OFT Address (Eth)</th>
-  <th>Required DVN</th>
+  <th>Required DVNs</th>
   <th>DVN Providers</th>
   <th>Recv Library Pinned</th>
+  <th class="right">Locked in OFT</th>
   <th class="right">Supply on Aave V3</th>
 </tr></thead>
 <tbody id="tbody"></tbody>
@@ -207,6 +220,10 @@ function normChain(name) {
   s = s.replace(' (formerly klaytn)', '').replace(' (bsc)', '');
   s = s.replace(' smart chain', '');
   s = s.replace(' era', '');
+  // Eth Core/Lido are Aave market labels, not separate chains - both live
+  // on Ethereum mainnet. Fold them so assetLink / dvnLink resolve to
+  // etherscan.io.
+  if (s === 'ethereum core' || s === 'ethereum lido') return 'ethereum';
   const map = {
     'op':'optimism','opt':'optimism','arb':'arbitrum','avax':'avalanche',
     'eth':'ethereum','bnb':'bsc','binance':'bsc',
@@ -275,19 +292,29 @@ function statusClass(s) {
 let DATA = [];
 
 function rowHtml(d) {
+  const isEthNative = (d.chain === 'Ethereum Core' || d.chain === 'Ethereum Lido');
   const dvns = (d.requiredDVNs || []).map(x => dvnLink(d.chain, x)).join(', ');
+  const dvnsCell = isEthNative && d.dvnFromBridge && dvns
+    ? dvns + ' <span title="OFT bridge configuration; the native asset issuer may differ from the OFT issuer (e.g. Tether vs USDT0)" style="color:var(--muted);font-weight:700">*</span>'
+    : dvns;
   const optBlurb = (d.optionalCount > 0)
     ? ' <span class="tag" title="Optional set: ' + d.optionalCount + ' DVNs, threshold ' + d.optionalThreshold + '">+ ' + d.optionalThreshold + '/' + d.optionalCount + ' opt</span>'
     : '';
   const ofturl = ethExplorer(d.sendContract);
   // Recv-lib pinning. yes (pinned) -> green check label; default -> red X
-  // 'LZ Default'; empty/error -> em-dash.
+  // 'LZ Default'; empty/error/eth-native -> em-dash (concept doesn't apply
+  // to Eth Core/Lido self-rows since there's no LZ Eth->Eth route).
   let pin = '<span style="color:var(--muted)">-</span>';
   if (d.recvLibPinned === 'yes') {
     pin = '<span class="pin-yes" title="setReceiveLibrary already called - migration risk mitigated">Yes</span>';
   } else if (d.recvLibPinned === 'default') {
     pin = '<span class="pin-no" title="OApp inherits LZ default receive library; exposed to LZ owner-key migration">LZ Default</span>';
   }
+  const supply = fmtUsd(d.totalSupplyUSD);
+  const supplyCell = isEthNative
+    ? supply + ' <span title="indirect exposure: native asset on Aave Eth Core/Lido" style="color:var(--muted);font-weight:700">*</span>'
+    : supply;
+  const lockedCell = fmtUsd(d.lockedAssetsUSD);
   return '<tr>'
        + '<td><span class="dot ' + statusClass(d.status) + '">' + (d.status || '') + '</span></td>'
        + '<td>' + d.chain + '</td>'
@@ -295,10 +322,114 @@ function rowHtml(d) {
        + '<td>' + d.issuer + '</td>'
        + '<td><a href="' + ofturl + '" target="_blank" rel="noopener" class="addr">'
        +   shortAddr(d.sendContract) + '</a></td>'
-       + '<td>' + d.requiredCount + '/0' + optBlurb + '</td>'
-       + '<td class="dvn-list">' + dvns + '</td>'
+       + '<td>' + (d.requiredCount || 0) + '/0' + optBlurb + '</td>'
+       + '<td class="dvn-list">' + dvnsCell + '</td>'
        + '<td>' + pin + '</td>'
-       + '<td class="right">' + fmtUsd(d.totalSupplyUSD) + '</td>'
+       + '<td class="right">' + lockedCell + '</td>'
+       + '<td class="right">' + supplyCell + '</td>'
+       + '</tr>';
+}
+
+// Eth Core/Lido rows are clubbed by (asset, chain): one display row per
+// asset per market, listing every OFT that holds that reserve. Cells
+// dedup when values agree across the group and concatenate when they
+// differ - separators per the user spec (issuer/OFT/req-count/recv-lib
+// use ", ", DVN-provider lists use "; ").
+function clubEthNativeRows(rows) {
+  const ETH_NATIVE = new Set(['Ethereum Core', 'Ethereum Lido']);
+  const out = [];
+  const idx = new Map();
+  for (const r of rows) {
+    if (!ETH_NATIVE.has(r.chain)) { out.push(r); continue; }
+    const key = r.asset + '|' + r.chain;
+    if (idx.has(key)) {
+      out[idx.get(key)]._rows.push(r);
+    } else {
+      idx.set(key, out.length);
+      out.push(Object.assign({}, r, { _isMerged: true, _rows: [r] }));
+    }
+  }
+  return out;
+}
+
+function pinLabel(p) {
+  if (p === 'yes')     return '<span class="pin-yes" title="setReceiveLibrary already called - migration risk mitigated">Yes</span>';
+  if (p === 'default') return '<span class="pin-no" title="OApp inherits LZ default receive library; exposed to LZ owner-key migration">LZ Default</span>';
+  return '<span style="color:var(--muted)">-</span>';
+}
+
+function dvnListHtml(chain, dvns) {
+  return (dvns || []).map(x => dvnLink(chain, x)).join(', ');
+}
+
+function mergedRowHtml(d) {
+  const rows = d._rows;
+  if (rows.length === 1) return rowHtml(d);
+
+  const isEthNative = (d.chain === 'Ethereum Core' || d.chain === 'Ethereum Lido');
+
+  // Issuers - dedup, ", "
+  const issuerCell = [...new Set(rows.map(r => r.issuer))].join(', ');
+
+  // OFT addresses - one short-link per OFT, ", "
+  const oftCell = rows.map(r =>
+    '<a href="' + ethExplorer(r.sendContract) + '" target="_blank" rel="noopener" class="addr">'
+    + shortAddr(r.sendContract) + '</a>'
+  ).join(', ');
+
+  // Required-count cell ("N/0"). One entry per row, no dedup - the user
+  // wants the count repeated even when all OFTs in the group agree, to
+  // avoid implying a single OFT.
+  const reqCell = rows.map(r => (r.requiredCount || 0) + '/0').join(', ');
+
+  // DVN providers - each row has a list. Canonical signature = sorted
+  // ethAddresses. If all rows share the same signature, render one list;
+  // otherwise render each row's list separated by "; ".
+  const sig = r => (r.requiredDVNs || []).map(x => (x.ethAddress || '').toLowerCase()).sort().join(',');
+  const sigs = [...new Set(rows.map(sig))];
+  let dvnsCell;
+  if (sigs.length === 1) {
+    dvnsCell = dvnListHtml(rows[0].chain, rows[0].requiredDVNs);
+  } else {
+    dvnsCell = rows.map(r => dvnListHtml(r.chain, r.requiredDVNs)).join('; ');
+  }
+  // Asterisk note when any row's DVN config was borrowed from a sibling.
+  if (isEthNative && rows.some(r => r.dvnFromBridge) && dvnsCell) {
+    dvnsCell += ' <span title="OFT bridge configuration; the native asset issuer may differ from the OFT issuer (e.g. Tether vs USDT0)" style="color:var(--muted);font-weight:700">*</span>';
+  }
+
+  // Recv-lib pinned - dedup, ", "
+  const pinKeys = [...new Set(rows.map(r => r.recvLibPinned || ''))];
+  const pinCell = pinKeys.map(pinLabel).join(', ');
+
+  // Supply: singular per (asset, market). Take the row's value as-is.
+  const supplyRaw = fmtUsd(d.totalSupplyUSD);
+  const supplyCell = isEthNative
+    ? supplyRaw + ' <span title="indirect exposure: native asset on Aave Eth Core/Lido" style="color:var(--muted);font-weight:700">*</span>'
+    : supplyRaw;
+
+  // Locked in OFT: each OFT in the merge group contributes its own
+  // balanceOf-derived value. Dedup by sendContract first (rows share
+  // the same OFT carry the same locked amount) and sum.
+  const oftLocked = new Map();
+  for (const r of rows) {
+    const oft = (r.sendContract || '').toLowerCase();
+    if (!oftLocked.has(oft)) oftLocked.set(oft, r.lockedAssetsUSD || 0);
+  }
+  const lockedTotal = [...oftLocked.values()].reduce((a, b) => a + b, 0);
+  const lockedCell = fmtUsd(lockedTotal);
+
+  return '<tr>'
+       + '<td><span class="dot ' + statusClass(d.status) + '">' + (d.status || '') + '</span></td>'
+       + '<td>' + d.chain + '</td>'
+       + '<td>' + assetLink(d.chain, d.remoteContract, d.asset) + '</td>'
+       + '<td>' + issuerCell + '</td>'
+       + '<td>' + oftCell + '</td>'
+       + '<td>' + reqCell + '</td>'
+       + '<td class="dvn-list">' + dvnsCell + '</td>'
+       + '<td>' + pinCell + '</td>'
+       + '<td class="right">' + lockedCell + '</td>'
+       + '<td class="right">' + supplyCell + '</td>'
        + '</tr>';
 }
 
@@ -307,15 +438,47 @@ function render() {
   const fc = document.getElementById('f-chain').value;
   const fi = document.getElementById('f-issuer').value;
   const fs = document.getElementById('f-status').value;
-  const filtered = DATA.filter(d =>
-    (!fa || d.asset === fa) &&
-    (!fc || d.chain === fc) &&
-    (!fi || d.issuer === fi) &&
-    (!fs || d.status === fs)
-  );
-  document.getElementById('tbody').innerHTML = filtered.map(rowHtml).join('');
+  const showEth = document.getElementById('f-eth').checked;
+  const filtered = DATA.filter(d => {
+    if (!showEth && (d.chain === 'Ethereum Core' || d.chain === 'Ethereum Lido')) return false;
+    return (!fa || d.asset === fa)
+        && (!fc || d.chain === fc)
+        && (!fi || d.issuer === fi)
+        && (!fs || d.status === fs);
+  });
+  const merged = clubEthNativeRows(filtered);
+  document.getElementById('tbody').innerHTML = merged.map(d =>
+    d._isMerged ? mergedRowHtml(d) : rowHtml(d)
+  ).join('');
   document.getElementById('count').textContent =
-    filtered.length + ' pathway' + (filtered.length === 1 ? '' : 's');
+    merged.length + ' pathway' + (merged.length === 1 ? '' : 's');
+
+  // Total exposure to LayerZero OFTs: sum the underlying-token balance
+  // locked in each OFT adapter on Ethereum, deduped by sendContract
+  // (the OFT address) so each Eth-side OFT is counted once regardless
+  // of how many destinations it serves. This is the actual at-risk
+  // amount via LZ - the Aave-V3 reserve supply (used previously) was an
+  // upper bound and double-counted when multiple OFTs bridge to the
+  // same Aave reserve.
+  const seen = new Set();
+  let total = 0;
+  for (const d of filtered) {
+    if (d.status !== '🟢') continue;
+    const oft = (d.sendContract || '').toLowerCase();
+    if (!oft || seen.has(oft)) continue;
+    seen.add(oft);
+    total += (d.lockedAssetsUSD || 0);
+  }
+  document.getElementById('total-exposure').textContent =
+    'Sum of assets locked in OFTs: ' + fmtUsdPlain(total);
+}
+
+function fmtUsdPlain(v) {
+  if (!v) return '$0';
+  if (v >= 1e9) return '$' + (v / 1e9).toFixed(2) + 'B';
+  if (v >= 1e6) return '$' + (v / 1e6).toFixed(2) + 'M';
+  if (v >= 1e3) return '$' + (v / 1e3).toFixed(1) + 'K';
+  return '$' + Math.round(v).toLocaleString();
 }
 
 function uniq(xs) { return [...new Set(xs)].sort(); }
@@ -337,7 +500,7 @@ function init(payload) {
     const o = document.createElement('option'); o.value = i; o.textContent = i;
     fi.appendChild(o);
   });
-  ['f-asset','f-chain','f-issuer','f-status'].forEach(id =>
+  ['f-asset','f-chain','f-issuer','f-status','f-eth'].forEach(id =>
     document.getElementById(id).addEventListener('change', render));
   render();
   document.getElementById('meta').textContent =
