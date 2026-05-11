@@ -36,7 +36,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 2893567593.35,
+      "totalSupplyUSD": 2810499215.11,
       "sendConfirmations": "45",
       "recvConfirmations": "45",
       "executor": {
@@ -51,7 +51,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udfe2",
@@ -84,7 +84,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 2393695175.77,
+      "totalSupplyUSD": 2443978756.63,
       "sendConfirmations": "15",
       "recvConfirmations": "5",
       "executor": {
@@ -99,7 +99,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udfe2",
@@ -132,7 +132,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 1981762192.9,
+      "totalSupplyUSD": 2048796940.97,
       "sendConfirmations": "65",
       "recvConfirmations": "9000",
       "executor": {
@@ -147,7 +147,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udfe2",
@@ -175,7 +175,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 1981762192.9,
+      "totalSupplyUSD": 2048796940.97,
       "sendConfirmations": "15",
       "recvConfirmations": "128",
       "executor": {
@@ -190,7 +190,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 19622109.32249131
+      "lockedAssetsUSD": 17486184.015500467
     },
     {
       "status": "\ud83d\udfe2",
@@ -223,7 +223,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 737952955.0836214,
+      "totalSupplyUSD": 757369441.3588753,
       "sendConfirmations": "65",
       "recvConfirmations": "1800",
       "executor": {
@@ -237,7 +237,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000002ca37966753bdddf11216b73b16c1de756a7cf9",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udfe2",
@@ -275,7 +275,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 395995623.59564996,
+      "totalSupplyUSD": 445100079.34017724,
       "sendConfirmations": "15",
       "recvConfirmations": "300",
       "executor": {
@@ -289,7 +289,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe2",
@@ -327,7 +327,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 355322250.6934162,
+      "totalSupplyUSD": 369305642.03879887,
       "sendConfirmations": "15",
       "recvConfirmations": "5",
       "executor": {
@@ -341,7 +341,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe2",
@@ -379,7 +379,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 308598062.0172176,
+      "totalSupplyUSD": 304844669.6064352,
       "sendConfirmations": "15",
       "recvConfirmations": "5",
       "executor": {
@@ -393,7 +393,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe2",
@@ -431,7 +431,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 239990840.59,
+      "totalSupplyUSD": 237707043.46,
       "sendConfirmations": "15",
       "recvConfirmations": "6000",
       "executor": {
@@ -446,7 +446,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe2",
@@ -484,7 +484,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 199007406.84,
+      "totalSupplyUSD": 186415507.0,
       "sendConfirmations": "15",
       "recvConfirmations": "6000",
       "executor": {
@@ -499,7 +499,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe2",
@@ -532,7 +532,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 170382103.07109836,
+      "totalSupplyUSD": 172121481.3472293,
       "sendConfirmations": "65",
       "recvConfirmations": "2000",
       "executor": {
@@ -546,7 +546,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000cb768e263fb1c62214e7cab4aa8d036d76dc59cc",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udfe2",
@@ -584,7 +584,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 161727886.03,
+      "totalSupplyUSD": 165328474.52,
       "sendConfirmations": "15",
       "recvConfirmations": "20",
       "executor": {
@@ -599,7 +599,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 231.42617491772896
+      "lockedAssetsUSD": 231.32573353233622
     },
     {
       "status": "\ud83d\udfe2",
@@ -637,7 +637,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 132885609.72618584,
+      "totalSupplyUSD": 88539332.05663988,
       "sendConfirmations": "45",
       "recvConfirmations": "45",
       "executor": {
@@ -651,7 +651,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000004c0599ae5a44757c0af6f9ec3b93da8976c150a",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udfe2",
@@ -684,7 +684,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 75524757.67,
+      "totalSupplyUSD": 75984288.6,
       "sendConfirmations": "65",
       "recvConfirmations": "32",
       "executor": {
@@ -699,7 +699,54 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "USD\u20ae0",
+      "issuer": "USDT0",
+      "chain": "Ink",
+      "chainKey": "ink",
+      "remoteContract": "0x0200c29006150606b650577bbe7b6248f58470c1",
+      "sendContract": "0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
+      "dstOAppContract": "0x1cb6de532588fca4a21b7209de7c456af8434a65",
+      "requiredCount": 3,
+      "requiredDVNs": [
+        {
+          "name": "USDT0",
+          "ethAddress": "0x3b0531eb02ab4ad72e7a531180beef9493a00dd2",
+          "dstAddress": "0xdf44a1594d3d516f7cdfb4dc275a79a5f6e3db1d"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x174f2ba26f8adeafa82663bcf908288d5dbca649"
+        },
+        {
+          "name": "Canary",
+          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
+          "dstAddress": "0x1e4ce74ccf5498b19900649d9196e64bab592451"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 73230611.68901686,
+      "sendConfirmations": "65",
+      "recvConfirmations": "3000",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
+      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
+      "recvLibPinned": "yes",
+      "peer": "0x0000000000000000000000001cb6de532588fca4a21b7209de7c456af8434a65",
+      "peerStatus": "active",
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udfe2",
@@ -737,7 +784,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 64864830.07928788,
+      "totalSupplyUSD": 63893353.132837035,
       "sendConfirmations": "15",
       "recvConfirmations": "2",
       "executor": {
@@ -751,7 +798,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe2",
@@ -784,7 +831,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 53456833.4044196,
+      "totalSupplyUSD": 52076446.30877723,
       "sendConfirmations": "65",
       "recvConfirmations": "60",
       "executor": {
@@ -798,7 +845,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000014e4a1b13bf7f943c8ff7c51fb60fa964a298d92",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udfe2",
@@ -826,7 +873,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 53456833.4044196,
+      "totalSupplyUSD": 52076446.30877723,
       "sendConfirmations": "15",
       "recvConfirmations": "20",
       "executor": {
@@ -840,7 +887,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000077652d5aba086137b595875263fc200182919b92",
       "peerStatus": "active",
-      "lockedAssetsUSD": 19622109.32249131
+      "lockedAssetsUSD": 17486184.015500467
     },
     {
       "status": "\ud83d\udfe2",
@@ -873,7 +920,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 51174575.73,
+      "totalSupplyUSD": 51465822.47,
       "sendConfirmations": "15",
       "recvConfirmations": "168",
       "executor": {
@@ -921,7 +968,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 51174575.73,
+      "totalSupplyUSD": 51465822.47,
       "sendConfirmations": "15",
       "recvConfirmations": "1",
       "executor": {
@@ -936,7 +983,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 987871.7864107151
+      "lockedAssetsUSD": 951394.2046040546
     },
     {
       "status": "\ud83d\udfe2",
@@ -969,7 +1016,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 40028093.39108722,
+      "totalSupplyUSD": 40085963.76063961,
       "sendConfirmations": "65",
       "recvConfirmations": "9000",
       "executor": {
@@ -983,7 +1030,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000094bcca6bdfd6a61817ab0e960bfede4984505554",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udfe2",
@@ -1016,7 +1063,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 32464806.571129456,
+      "totalSupplyUSD": 32478357.187782556,
       "sendConfirmations": "65",
       "recvConfirmations": "32",
       "executor": {
@@ -1030,7 +1077,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000006ba10300f0dc58b7a1e4c0e41f5dabb7d7829e13",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udfe2",
@@ -1058,7 +1105,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 23456491.27,
+      "totalSupplyUSD": 26585546.29,
       "sendConfirmations": "15",
       "recvConfirmations": "32",
       "executor": {
@@ -1073,93 +1120,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 56266437.68437583
-    },
-    {
-      "status": "\ud83d\udfe2",
-      "assetOnAave": "yes",
-      "asset": "FBTC",
-      "issuer": "Function",
-      "chain": "Ethereum Core",
-      "chainKey": "",
-      "remoteContract": "0xc96de26018a54d51c097160568752c4e3bd6c364",
-      "sendContract": "0x0b835f07a2a54c0e80c1f585e5b6dd732816da3f",
-      "dstOAppContract": "0x0b835f07a2a54c0e80c1f585e5b6dd732816da3f",
-      "requiredCount": 2,
-      "requiredDVNs": [
-        {
-          "name": "Unknown",
-          "ethAddress": "0x53af943a880b93eb53c8e39def519ae4dcaab0ef",
-          "dstAddress": ""
-        },
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0x5933a371ea26e11318389ee3322ae3ec16463502"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 19633497.55,
-      "sendConfirmations": "15",
-      "recvConfirmations": "120",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "",
-      "recvLibIsDefault": "no",
-      "recvLib": "",
-      "recvLibPinned": "yes",
-      "peer": "",
-      "peerStatus": "ethereum_native",
-      "dvnFromBridge": true,
-      "lockedAssetsUSD": 1461.5960533568948
-    },
-    {
-      "status": "\ud83d\udfe2",
-      "assetOnAave": "yes",
-      "asset": "FBTC",
-      "issuer": "Function",
-      "chain": "Ethereum Core",
-      "chainKey": "",
-      "remoteContract": "0xc96de26018a54d51c097160568752c4e3bd6c364",
-      "sendContract": "0xf6a4c0cfd578ca944bc030b9c9645674df6da406",
-      "dstOAppContract": "0xf6a4c0cfd578ca944bc030b9c9645674df6da406",
-      "requiredCount": 2,
-      "requiredDVNs": [
-        {
-          "name": "Unknown",
-          "ethAddress": "0x53af943a880b93eb53c8e39def519ae4dcaab0ef",
-          "dstAddress": ""
-        },
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "4vdjp6xqaxozf5rgwipu9nr1exszn2tp4atmmiszlfhb"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 19633497.55,
-      "sendConfirmations": "15",
-      "recvConfirmations": "40",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "",
-      "recvLibIsDefault": "no",
-      "recvLib": "",
-      "recvLibPinned": "yes",
-      "peer": "",
-      "peerStatus": "ethereum_native",
-      "dvnFromBridge": true,
-      "lockedAssetsUSD": 13833315.229203641
+      "lockedAssetsUSD": 55661906.917167775
     },
     {
       "status": "\ud83d\udfe2",
@@ -1192,7 +1153,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 19136021.6,
+      "totalSupplyUSD": 18676698.07,
       "sendConfirmations": "15",
       "recvConfirmations": "32",
       "executor": {
@@ -1208,6 +1169,92 @@
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
       "lockedAssetsUSD": 0.0
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "FBTC",
+      "issuer": "Function",
+      "chain": "Ethereum Core",
+      "chainKey": "",
+      "remoteContract": "0xc96de26018a54d51c097160568752c4e3bd6c364",
+      "sendContract": "0x0b835f07a2a54c0e80c1f585e5b6dd732816da3f",
+      "dstOAppContract": "0x0b835f07a2a54c0e80c1f585e5b6dd732816da3f",
+      "requiredCount": 2,
+      "requiredDVNs": [
+        {
+          "name": "Unknown",
+          "ethAddress": "0x53af943a880b93eb53c8e39def519ae4dcaab0ef",
+          "dstAddress": ""
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x5933a371ea26e11318389ee3322ae3ec16463502"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 17976042.75,
+      "sendConfirmations": "15",
+      "recvConfirmations": "120",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "",
+      "recvLibIsDefault": "no",
+      "recvLib": "",
+      "recvLibPinned": "yes",
+      "peer": "",
+      "peerStatus": "ethereum_native",
+      "dvnFromBridge": true,
+      "lockedAssetsUSD": 1451.8970259230227
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "FBTC",
+      "issuer": "Function",
+      "chain": "Ethereum Core",
+      "chainKey": "",
+      "remoteContract": "0xc96de26018a54d51c097160568752c4e3bd6c364",
+      "sendContract": "0xf6a4c0cfd578ca944bc030b9c9645674df6da406",
+      "dstOAppContract": "0xf6a4c0cfd578ca944bc030b9c9645674df6da406",
+      "requiredCount": 2,
+      "requiredDVNs": [
+        {
+          "name": "Unknown",
+          "ethAddress": "0x53af943a880b93eb53c8e39def519ae4dcaab0ef",
+          "dstAddress": ""
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "4vdjp6xqaxozf5rgwipu9nr1exszn2tp4atmmiszlfhb"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 17976042.75,
+      "sendConfirmations": "15",
+      "recvConfirmations": "40",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "",
+      "recvLibIsDefault": "no",
+      "recvLib": "",
+      "recvLibPinned": "yes",
+      "peer": "",
+      "peerStatus": "ethereum_native",
+      "dvnFromBridge": true,
+      "lockedAssetsUSD": 13741518.522718774
     },
     {
       "status": "\ud83d\udfe2",
@@ -1240,7 +1287,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 16850141.696740832,
+      "totalSupplyUSD": 16898237.328093212,
       "sendConfirmations": "15",
       "recvConfirmations": "20",
       "executor": {
@@ -1254,7 +1301,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000c3f854b2970f8727d28527ece33176fac67fef48",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udfe2",
@@ -1292,7 +1339,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 15071837.302516362,
+      "totalSupplyUSD": 15060420.029675497,
       "sendConfirmations": "15",
       "recvConfirmations": "2",
       "executor": {
@@ -1306,37 +1353,42 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe2",
       "assetOnAave": "yes",
-      "asset": "USD\u20ae",
-      "issuer": "USDT0 Legacy Mesh",
-      "chain": "Celo",
-      "chainKey": "celo",
-      "remoteContract": "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e",
-      "sendContract": "0x1f748c76de468e9d11bd340fa9d5cbadf315dfb0",
-      "dstOAppContract": "0xf10e161027410128e63e75d0200fb6d34b2db243",
-      "requiredCount": 2,
+      "asset": "USDG",
+      "issuer": "Paxos",
+      "chain": "Ink",
+      "chainKey": "ink",
+      "remoteContract": "0xe343167631d89b6ffc58b88d6b7fb0228795491d",
+      "sendContract": "0x147bde4f997f0d4c7544ed0c55eacf1e5e6bf9c4",
+      "dstOAppContract": "0x9e12c058a20c5b0eebaa00e44a712ec54b838971",
+      "requiredCount": 3,
       "requiredDVNs": [
-        {
-          "name": "USDT0",
-          "ethAddress": "0x3b0531eb02ab4ad72e7a531180beef9493a00dd2",
-          "dstAddress": "0x18f76f0d8ccd176bbe59b3870fa486d1fff87026"
-        },
         {
           "name": "LayerZero Labs",
           "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0x75b073994560a5c03cd970414d9170be0c6e5c36"
+          "dstAddress": "0x174f2ba26f8adeafa82663bcf908288d5dbca649"
+        },
+        {
+          "name": "Nethermind",
+          "ethAddress": "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5",
+          "dstAddress": "0x96ca3420bedd887cabdaba29c7dce6bad57af98b"
+        },
+        {
+          "name": "Paxos",
+          "ethAddress": "0xb0b2ef168f52f6d1e42f461e11117295ef992daf",
+          "dstAddress": "0x1c5c9c9b50885319bd3cb7e67294136cd436bee3"
         }
       ],
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 4849824.451490201,
+      "totalSupplyUSD": 13689231.121205805,
       "sendConfirmations": "15",
-      "recvConfirmations": "5",
+      "recvConfirmations": "168",
       "executor": {
         "name": "LayerZero Labs",
         "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
@@ -1346,103 +1398,9 @@
       "recvLibIsDefault": "no",
       "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
       "recvLibPinned": "yes",
-      "peer": "0x000000000000000000000000f10e161027410128e63e75d0200fb6d34b2db243",
+      "peer": "0x0000000000000000000000009e12c058a20c5b0eebaa00e44a712ec54b838971",
       "peerStatus": "active",
-      "lockedAssetsUSD": 19622109.32249131
-    },
-    {
-      "status": "\ud83d\udfe2",
-      "assetOnAave": "yes",
-      "asset": "USDT",
-      "issuer": "USDT0",
-      "chain": "Optimism",
-      "chainKey": "optimism",
-      "remoteContract": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
-      "sendContract": "0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
-      "dstOAppContract": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
-      "requiredCount": 3,
-      "requiredDVNs": [
-        {
-          "name": "USDT0",
-          "ethAddress": "0x3b0531eb02ab4ad72e7a531180beef9493a00dd2",
-          "dstAddress": "0x947bb89919d1e5996d6c46223626ac2e97bcf8a3"
-        },
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0x6a02d83e8d433304bba74ef1c427913958187142"
-        },
-        {
-          "name": "Canary",
-          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
-          "dstAddress": "0x5b6735c66d97479ccd18294fc96b3084ecb2fa3f"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 4847198.490815992,
-      "sendConfirmations": "65",
-      "recvConfirmations": "1000",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "yes",
-      "recvLibIsDefault": "no",
-      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
-      "recvLibPinned": "yes",
-      "peer": "0x000000000000000000000000f03b4d9ac1d5d1e7c4cef54c2a313b9fe051a0ad",
-      "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
-    },
-    {
-      "status": "\ud83d\udfe2",
-      "assetOnAave": "yes",
-      "asset": "XAUt0",
-      "issuer": "USDT0",
-      "chain": "Plasma",
-      "chainKey": "plasma",
-      "remoteContract": "0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193",
-      "sendContract": "0xb9c2321bb7d0db468f570d10a424d1cc8efd696c",
-      "dstOAppContract": "0x63ab93cbc9d4ecd9c4947b1a38f458147c08e6f7",
-      "requiredCount": 3,
-      "requiredDVNs": [
-        {
-          "name": "USDT0",
-          "ethAddress": "0x3b0531eb02ab4ad72e7a531180beef9493a00dd2",
-          "dstAddress": "0xdcdd4628f858b45260c31d6ad076bd2c3d3c2f73"
-        },
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0xe5bffd46776251b70895517d4ab635a640da61e9"
-        },
-        {
-          "name": "Canary",
-          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
-          "dstAddress": "0x2465ee263149a18d61c9224244c61a5871dc0473"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 4837528.43159982,
-      "sendConfirmations": "65",
-      "recvConfirmations": "3600",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "yes",
-      "recvLibIsDefault": "no",
-      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
-      "recvLibPinned": "yes",
-      "peer": "0x00000000000000000000000063ab93cbc9d4ecd9c4947b1a38f458147c08e6f7",
-      "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 0.0
     },
     {
       "status": "\ud83d\udfe2",
@@ -1480,7 +1438,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 4785490.431584118,
+      "totalSupplyUSD": 5554747.228545725,
       "sendConfirmations": "45",
       "recvConfirmations": "45",
       "executor": {
@@ -1494,7 +1452,143 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000001bf74c010e6320bab11e2e5a532b5ac15e0b8aa6",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "XAUt0",
+      "issuer": "USDT0",
+      "chain": "Plasma",
+      "chainKey": "plasma",
+      "remoteContract": "0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193",
+      "sendContract": "0xb9c2321bb7d0db468f570d10a424d1cc8efd696c",
+      "dstOAppContract": "0x63ab93cbc9d4ecd9c4947b1a38f458147c08e6f7",
+      "requiredCount": 3,
+      "requiredDVNs": [
+        {
+          "name": "USDT0",
+          "ethAddress": "0x3b0531eb02ab4ad72e7a531180beef9493a00dd2",
+          "dstAddress": "0xdcdd4628f858b45260c31d6ad076bd2c3d3c2f73"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0xe5bffd46776251b70895517d4ab635a640da61e9"
+        },
+        {
+          "name": "Canary",
+          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
+          "dstAddress": "0x2465ee263149a18d61c9224244c61a5871dc0473"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 4838692.84453117,
+      "sendConfirmations": "65",
+      "recvConfirmations": "3600",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
+      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
+      "recvLibPinned": "yes",
+      "peer": "0x00000000000000000000000063ab93cbc9d4ecd9c4947b1a38f458147c08e6f7",
+      "peerStatus": "active",
+      "lockedAssetsUSD": 87720874.68265134
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "USDT",
+      "issuer": "USDT0",
+      "chain": "Optimism",
+      "chainKey": "optimism",
+      "remoteContract": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
+      "sendContract": "0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
+      "dstOAppContract": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
+      "requiredCount": 3,
+      "requiredDVNs": [
+        {
+          "name": "USDT0",
+          "ethAddress": "0x3b0531eb02ab4ad72e7a531180beef9493a00dd2",
+          "dstAddress": "0x947bb89919d1e5996d6c46223626ac2e97bcf8a3"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x6a02d83e8d433304bba74ef1c427913958187142"
+        },
+        {
+          "name": "Canary",
+          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
+          "dstAddress": "0x5b6735c66d97479ccd18294fc96b3084ecb2fa3f"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 4831770.67979651,
+      "sendConfirmations": "65",
+      "recvConfirmations": "1000",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
+      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
+      "recvLibPinned": "yes",
+      "peer": "0x000000000000000000000000f03b4d9ac1d5d1e7c4cef54c2a313b9fe051a0ad",
+      "peerStatus": "active",
+      "lockedAssetsUSD": 3540288305.9248257
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "USD\u20ae",
+      "issuer": "USDT0 Legacy Mesh",
+      "chain": "Celo",
+      "chainKey": "celo",
+      "remoteContract": "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e",
+      "sendContract": "0x1f748c76de468e9d11bd340fa9d5cbadf315dfb0",
+      "dstOAppContract": "0xf10e161027410128e63e75d0200fb6d34b2db243",
+      "requiredCount": 2,
+      "requiredDVNs": [
+        {
+          "name": "USDT0",
+          "ethAddress": "0x3b0531eb02ab4ad72e7a531180beef9493a00dd2",
+          "dstAddress": "0x18f76f0d8ccd176bbe59b3870fa486d1fff87026"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x75b073994560a5c03cd970414d9170be0c6e5c36"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 4720024.146540249,
+      "sendConfirmations": "15",
+      "recvConfirmations": "5",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
+      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
+      "recvLibPinned": "yes",
+      "peer": "0x000000000000000000000000f10e161027410128e63e75d0200fb6d34b2db243",
+      "peerStatus": "active",
+      "lockedAssetsUSD": 17486184.015500467
     },
     {
       "status": "\ud83d\udfe2",
@@ -1532,7 +1626,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 2908991.794582506,
+      "totalSupplyUSD": 2944961.5237325085,
       "sendConfirmations": "45",
       "recvConfirmations": "45",
       "executor": {
@@ -1546,7 +1640,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000a3d68b74bf0528fdd07263c60d6488749044914b",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udfe2",
@@ -1574,7 +1668,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 2369314.13,
+      "totalSupplyUSD": 2504485.12,
       "sendConfirmations": "15",
       "recvConfirmations": "5",
       "executor": {
@@ -1589,7 +1683,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 556.6658043368465
+      "lockedAssetsUSD": 580.5348449218706
     },
     {
       "status": "\ud83d\udfe2",
@@ -1622,21 +1716,21 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 2036802.3818180521,
+      "totalSupplyUSD": 2036462.6126985822,
       "sendConfirmations": "65",
       "recvConfirmations": "5400",
       "executor": {
         "name": "LayerZero Labs",
         "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
       },
-      "isCustom": "yes",
+      "isCustom": "",
       "sendLibIsDefault": "yes",
       "recvLibIsDefault": "no",
       "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000009151434b16b9763660705744891fa906f660ecc5",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udfe2",
@@ -1664,7 +1758,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 637459.2681432614,
+      "totalSupplyUSD": 637646.6144715406,
       "sendConfirmations": "15",
       "recvConfirmations": "20",
       "executor": {
@@ -1678,7 +1772,7 @@
       "recvLibPinned": "default",
       "peer": "0xb274202daba6ae180c665b4fbe59857b7c3a8091152649ea73beab28c5b49b26eb48f7ead6d4c898",
       "peerStatus": "active",
-      "lockedAssetsUSD": 2120.974743408447
+      "lockedAssetsUSD": 2126.8278742141115
     },
     {
       "status": "\ud83d\udfe2",
@@ -1721,7 +1815,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 273295.4047228703,
+      "totalSupplyUSD": 268969.3376284765,
       "sendConfirmations": "15",
       "recvConfirmations": "15",
       "executor": {
@@ -1763,7 +1857,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 261126.75,
+      "totalSupplyUSD": 261197.02,
       "sendConfirmations": "15",
       "recvConfirmations": "32",
       "executor": {
@@ -1778,7 +1872,7 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 56266437.68437583
+      "lockedAssetsUSD": 55661906.917167775
     },
     {
       "status": "\ud83d\udfe2",
@@ -1806,7 +1900,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 212833.13,
+      "totalSupplyUSD": 212862.31,
       "sendConfirmations": "15",
       "recvConfirmations": "5",
       "executor": {
@@ -1821,7 +1915,93 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 1295.7122182480505
+      "lockedAssetsUSD": 1295.3283347586757
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "FRAX",
+      "issuer": "Frax Finance",
+      "chain": "Ethereum Core",
+      "chainKey": "",
+      "remoteContract": "0x853d955acef822db058eb8505911ed77f175b99e",
+      "sendContract": "0xe41228a455700caf09e551805a8ab37caa39d08c",
+      "dstOAppContract": "0xe41228a455700caf09e551805a8ab37caa39d08c",
+      "requiredCount": 2,
+      "requiredDVNs": [
+        {
+          "name": "Horizen",
+          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
+          "dstAddress": "0xdd7b5e1db4aafd5c8ec3b764efb8ed265aa5445b"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x9c061c9a4782294eef65ef28cb88233a987f4bdd"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 144989.48,
+      "sendConfirmations": "15",
+      "recvConfirmations": "225000",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "",
+      "recvLibIsDefault": "yes",
+      "recvLib": "",
+      "recvLibPinned": "default",
+      "peer": "",
+      "peerStatus": "ethereum_native",
+      "dvnFromBridge": true,
+      "lockedAssetsUSD": 6.6962896254171405
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "FRAX",
+      "issuer": "Frax Finance",
+      "chain": "Ethereum Core",
+      "chainKey": "",
+      "remoteContract": "0x853d955acef822db058eb8505911ed77f175b99e",
+      "sendContract": "0x909dbde1ebe906af95660033e478d59efe831fed",
+      "dstOAppContract": "0x909dbde1ebe906af95660033e478d59efe831fed",
+      "requiredCount": 2,
+      "requiredDVNs": [
+        {
+          "name": "Horizen",
+          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
+          "dstAddress": "hr9nqkk1ynw9nzgdm37du5cbtqrhtukmbmks7qkwskhx"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "4vdjp6xqaxozf5rgwipu9nr1exszn2tp4atmmiszlfhb"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 144989.48,
+      "sendConfirmations": "15",
+      "recvConfirmations": "32",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "",
+      "recvLibIsDefault": "yes",
+      "recvLib": "",
+      "recvLibPinned": "default",
+      "peer": "",
+      "peerStatus": "ethereum_native",
+      "dvnFromBridge": true,
+      "lockedAssetsUSD": 75.40044200695175
     },
     {
       "status": "\ud83d\udfe2",
@@ -1854,7 +2034,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 181420.549905,
+      "totalSupplyUSD": 132723.903017,
       "sendConfirmations": "15",
       "recvConfirmations": "168",
       "executor": {
@@ -1869,135 +2049,6 @@
       "peer": "0x0000000000000000000000009a7164112029b81c07636ab7b59fa813e0883bbf",
       "peerStatus": "active",
       "lockedAssetsUSD": 0.0
-    },
-    {
-      "status": "\ud83d\udfe2",
-      "assetOnAave": "yes",
-      "asset": "FRAX",
-      "issuer": "Frax Finance",
-      "chain": "Ethereum Core",
-      "chainKey": "",
-      "remoteContract": "0x853d955acef822db058eb8505911ed77f175b99e",
-      "sendContract": "0xe41228a455700caf09e551805a8ab37caa39d08c",
-      "dstOAppContract": "0xe41228a455700caf09e551805a8ab37caa39d08c",
-      "requiredCount": 2,
-      "requiredDVNs": [
-        {
-          "name": "Horizen",
-          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
-          "dstAddress": "0xdd7b5e1db4aafd5c8ec3b764efb8ed265aa5445b"
-        },
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0x9c061c9a4782294eef65ef28cb88233a987f4bdd"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 144948.4,
-      "sendConfirmations": "15",
-      "recvConfirmations": "225000",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "",
-      "recvLibIsDefault": "yes",
-      "recvLib": "",
-      "recvLibPinned": "default",
-      "peer": "",
-      "peerStatus": "ethereum_native",
-      "dvnFromBridge": true,
-      "lockedAssetsUSD": 6.709303847864946
-    },
-    {
-      "status": "\ud83d\udfe2",
-      "assetOnAave": "yes",
-      "asset": "FRAX",
-      "issuer": "Frax Finance",
-      "chain": "Ethereum Core",
-      "chainKey": "",
-      "remoteContract": "0x853d955acef822db058eb8505911ed77f175b99e",
-      "sendContract": "0x909dbde1ebe906af95660033e478d59efe831fed",
-      "dstOAppContract": "0x909dbde1ebe906af95660033e478d59efe831fed",
-      "requiredCount": 2,
-      "requiredDVNs": [
-        {
-          "name": "Horizen",
-          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
-          "dstAddress": "hr9nqkk1ynw9nzgdm37du5cbtqrhtukmbmks7qkwskhx"
-        },
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "4vdjp6xqaxozf5rgwipu9nr1exszn2tp4atmmiszlfhb"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 144948.4,
-      "sendConfirmations": "15",
-      "recvConfirmations": "32",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "",
-      "recvLibIsDefault": "yes",
-      "recvLib": "",
-      "recvLibPinned": "default",
-      "peer": "",
-      "peerStatus": "ethereum_native",
-      "dvnFromBridge": true,
-      "lockedAssetsUSD": 75.54698258088641
-    },
-    {
-      "status": "\ud83d\udfe2",
-      "assetOnAave": "yes",
-      "asset": "BAL",
-      "issuer": "Balancer",
-      "chain": "Ethereum Core",
-      "chainKey": "",
-      "remoteContract": "0xba100000625a3754423978a60c9317c58a424e3d",
-      "sendContract": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3",
-      "dstOAppContract": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3",
-      "requiredCount": 2,
-      "requiredDVNs": [
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0x0ffe02df012299a370d5dd69298a5826eacafdf8"
-        },
-        {
-          "name": "Google",
-          "ethAddress": "0xd56e4eab23cb81f43168f9f45211eb027b9ac7cc",
-          "dstAddress": "0xd56e4eab23cb81f43168f9f45211eb027b9ac7cc"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 74912.26,
-      "sendConfirmations": "15",
-      "recvConfirmations": "12",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "no",
-      "sendLibIsDefault": "",
-      "recvLibIsDefault": "yes",
-      "recvLib": "",
-      "recvLibPinned": "default",
-      "peer": "",
-      "peerStatus": "ethereum_native",
-      "dvnFromBridge": true,
-      "lockedAssetsUSD": 2674.1878659592926
     },
     {
       "status": "\ud83d\udfe2",
@@ -2035,7 +2086,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 60904.28677915509,
+      "totalSupplyUSD": 75643.40397461122,
       "sendConfirmations": "15",
       "recvConfirmations": "12",
       "executor": {
@@ -2049,7 +2100,50 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "BAL",
+      "issuer": "Balancer",
+      "chain": "Ethereum Core",
+      "chainKey": "",
+      "remoteContract": "0xba100000625a3754423978a60c9317c58a424e3d",
+      "sendContract": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3",
+      "dstOAppContract": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3",
+      "requiredCount": 2,
+      "requiredDVNs": [
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x0ffe02df012299a370d5dd69298a5826eacafdf8"
+        },
+        {
+          "name": "Google",
+          "ethAddress": "0xd56e4eab23cb81f43168f9f45211eb027b9ac7cc",
+          "dstAddress": "0xd56e4eab23cb81f43168f9f45211eb027b9ac7cc"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 72037.19,
+      "sendConfirmations": "15",
+      "recvConfirmations": "12",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "no",
+      "sendLibIsDefault": "",
+      "recvLibIsDefault": "yes",
+      "recvLib": "",
+      "recvLibPinned": "default",
+      "peer": "",
+      "peerStatus": "ethereum_native",
+      "dvnFromBridge": true,
+      "lockedAssetsUSD": 2598.5685388605143
     },
     {
       "status": "\ud83d\udfe2",
@@ -2087,7 +2181,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 45837.63,
+      "totalSupplyUSD": 45853.95,
       "sendConfirmations": "15",
       "recvConfirmations": "6000",
       "executor": {
@@ -2102,7 +2196,59 @@
       "peer": "",
       "peerStatus": "ethereum_native",
       "dvnFromBridge": true,
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "weETH",
+      "issuer": "Ether.Fi",
+      "chain": "Ink",
+      "chainKey": "ink",
+      "remoteContract": "0xa3d68b74bf0528fdd07263c60d6488749044914b",
+      "sendContract": "0xcd2eb13d6831d4602d80e5db9230a57596cdca63",
+      "dstOAppContract": "0xa3d68b74bf0528fdd07263c60d6488749044914b",
+      "requiredCount": 4,
+      "requiredDVNs": [
+        {
+          "name": "Horizen",
+          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
+          "dstAddress": "0x395b14700812cccc38b8e64f0a06ce2045fe9ba3"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x174f2ba26f8adeafa82663bcf908288d5dbca649"
+        },
+        {
+          "name": "Canary",
+          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
+          "dstAddress": "0x1e4ce74ccf5498b19900649d9196e64bab592451"
+        },
+        {
+          "name": "Nethermind",
+          "ethAddress": "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5",
+          "dstAddress": "0x96ca3420bedd887cabdaba29c7dce6bad57af98b"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 43027.038307326926,
+      "sendConfirmations": "45",
+      "recvConfirmations": "45",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
+      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
+      "recvLibPinned": "yes",
+      "peer": "0x000000000000000000000000a3d68b74bf0528fdd07263c60d6488749044914b",
+      "peerStatus": "active",
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udfe2",
@@ -2140,7 +2286,7 @@
       "optionalCount": 0,
       "optionalDVNs": [],
       "optionalThreshold": 0,
-      "totalSupplyUSD": 28385.254047277125,
+      "totalSupplyUSD": 28391.92403905138,
       "sendConfirmations": "15",
       "recvConfirmations": "12",
       "executor": {
@@ -2154,7 +2300,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe2",
@@ -2206,7 +2352,59 @@
       "recvLibPinned": "yes",
       "peer": "0xa84fcc405fa7e5415f02f50167aac3d4ec2947187aabb9087f6b16d31c8715e5",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
+    },
+    {
+      "status": "\ud83d\udfe2",
+      "assetOnAave": "yes",
+      "asset": "sUSDe",
+      "issuer": "Ethena",
+      "chain": "Ink",
+      "chainKey": "ink",
+      "remoteContract": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+      "sendContract": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+      "dstOAppContract": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+      "requiredCount": 4,
+      "requiredDVNs": [
+        {
+          "name": "Horizen",
+          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
+          "dstAddress": "0x395b14700812cccc38b8e64f0a06ce2045fe9ba3"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x174f2ba26f8adeafa82663bcf908288d5dbca649"
+        },
+        {
+          "name": "Canary",
+          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
+          "dstAddress": "0x1e4ce74ccf5498b19900649d9196e64bab592451"
+        },
+        {
+          "name": "Nethermind",
+          "ethAddress": "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5",
+          "dstAddress": "0x96ca3420bedd887cabdaba29c7dce6bad57af98b"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 123.59224764779668,
+      "sendConfirmations": "15",
+      "recvConfirmations": "20",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
+      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
+      "recvLibPinned": "yes",
+      "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+      "peerStatus": "active",
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -2248,7 +2446,7 @@
       "recvLibPinned": "default",
       "peer": "0xe15bcb9e0ea69e6ab9fa080c4c4a5632896298c3e15bcb9e0ea69e6ab9fa080c4c4a5632896298c3",
       "peerStatus": "active",
-      "lockedAssetsUSD": 2674.1878659592926
+      "lockedAssetsUSD": 2598.5685388605143
     },
     {
       "status": "\ud83d\udfe1",
@@ -2290,7 +2488,7 @@
       "recvLibPinned": "default",
       "peer": "0x1b896893dfc86bb67cf57767298b9073d2c1ba2c152649ea73beab28c5b49b26eb48f7ead6d4c898",
       "peerStatus": "active",
-      "lockedAssetsUSD": 2120.974743408447
+      "lockedAssetsUSD": 2126.8278742141115
     },
     {
       "status": "\ud83d\udfe1",
@@ -2332,7 +2530,7 @@
       "recvLibPinned": "default",
       "peer": "0x3055913c90fcc1a6ce9a358911721eeb942013a1152649ea73beab28c5b49b26eb48f7ead6d4c898",
       "peerStatus": "active",
-      "lockedAssetsUSD": 2120.974743408447
+      "lockedAssetsUSD": 2126.8278742141115
     },
     {
       "status": "\ud83d\udfe1",
@@ -2374,7 +2572,7 @@
       "recvLibPinned": "default",
       "peer": "0x0d1e753a25ebda689453309112904807625befbe152649ea73beab28c5b49b26eb48f7ead6d4c898",
       "peerStatus": "active",
-      "lockedAssetsUSD": 2120.974743408447
+      "lockedAssetsUSD": 2126.8278742141115
     },
     {
       "status": "\ud83d\udfe1",
@@ -2416,7 +2614,7 @@
       "recvLibPinned": "default",
       "peer": "0x000000000000000000000000e41228a455700caf09e551805a8ab37caa39d08c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 6.709303847864946
+      "lockedAssetsUSD": 6.6962896254171405
     },
     {
       "status": "\ud83d\udfe1",
@@ -2453,12 +2651,12 @@
       },
       "isCustom": "yes",
       "sendLibIsDefault": "no",
-      "recvLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
       "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
-      "recvLibPinned": "default",
+      "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000909dbde1ebe906af95660033e478d59efe831fed",
       "peerStatus": "active",
-      "lockedAssetsUSD": 75.54698258088641
+      "lockedAssetsUSD": 75.40044200695175
     },
     {
       "status": "\ud83d\udfe1",
@@ -2500,7 +2698,7 @@
       "recvLibPinned": "default",
       "peer": "0x000000000000000000000000eed9de5e41b53d1c8fab8aab4b0e446f828c1483",
       "peerStatus": "active",
-      "lockedAssetsUSD": 6.709303847864946
+      "lockedAssetsUSD": 6.6962896254171405
     },
     {
       "status": "\ud83d\udfe1",
@@ -2542,7 +2740,7 @@
       "recvLibPinned": "default",
       "peer": "0x000000000000000000000000e41228a455700caf09e551805a8ab37caa39d08c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 6.709303847864946
+      "lockedAssetsUSD": 6.6962896254171405
     },
     {
       "status": "\ud83d\udfe1",
@@ -2579,12 +2777,12 @@
       },
       "isCustom": "yes",
       "sendLibIsDefault": "no",
-      "recvLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
       "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
-      "recvLibPinned": "default",
+      "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000909dbde1ebe906af95660033e478d59efe831fed",
       "peerStatus": "active",
-      "lockedAssetsUSD": 75.54698258088641
+      "lockedAssetsUSD": 75.40044200695175
     },
     {
       "status": "\ud83d\udfe1",
@@ -2636,53 +2834,6 @@
     {
       "status": "\ud83d\udfe1",
       "assetOnAave": "no",
-      "asset": "USDG",
-      "issuer": "Paxos",
-      "chain": "Ink",
-      "chainKey": "ink",
-      "remoteContract": "0xe343167631d89b6ffc58b88d6b7fb0228795491d",
-      "sendContract": "0x147bde4f997f0d4c7544ed0c55eacf1e5e6bf9c4",
-      "dstOAppContract": "0x9e12c058a20c5b0eebaa00e44a712ec54b838971",
-      "requiredCount": 3,
-      "requiredDVNs": [
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0x174f2ba26f8adeafa82663bcf908288d5dbca649"
-        },
-        {
-          "name": "Nethermind",
-          "ethAddress": "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5",
-          "dstAddress": "0x96ca3420bedd887cabdaba29c7dce6bad57af98b"
-        },
-        {
-          "name": "Paxos",
-          "ethAddress": "0xb0b2ef168f52f6d1e42f461e11117295ef992daf",
-          "dstAddress": "0x1c5c9c9b50885319bd3cb7e67294136cd436bee3"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 0.0,
-      "sendConfirmations": "15",
-      "recvConfirmations": "168",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "yes",
-      "recvLibIsDefault": "no",
-      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
-      "recvLibPinned": "yes",
-      "peer": "0x0000000000000000000000009e12c058a20c5b0eebaa00e44a712ec54b838971",
-      "peerStatus": "active",
-      "lockedAssetsUSD": 0.0
-    },
-    {
-      "status": "\ud83d\udfe1",
-      "assetOnAave": "no",
       "asset": "USDS",
       "issuer": "Sky",
       "chain": "Avalanche",
@@ -2720,7 +2871,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000004fec40719fd9a8ae3f8e20531669dec5962d2619",
       "peerStatus": "active",
-      "lockedAssetsUSD": 56266437.68437583
+      "lockedAssetsUSD": 55661906.917167775
     },
     {
       "status": "\ud83d\udfe1",
@@ -2772,7 +2923,7 @@
       "recvLibPinned": "yes",
       "peer": "0x9674429dcc02d2ed0d50fa24cb25262d349a5722b1a02502cff92e3cc85924b3",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -2824,7 +2975,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -2876,7 +3027,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -2928,7 +3079,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -2980,7 +3131,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -3032,7 +3183,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -3084,7 +3235,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -3136,7 +3287,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -3188,7 +3339,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -3240,7 +3391,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000039fe7a0dacce31bd90418e3e659fb0b5f0b3db0d",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udfe1",
@@ -3292,7 +3443,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000c708b6887db46005da033501f8aebee72d191a5d",
       "peerStatus": "active",
-      "lockedAssetsUSD": 231.42617491772896
+      "lockedAssetsUSD": 231.32573353233622
     },
     {
       "status": "\ud83d\udfe1",
@@ -3344,54 +3495,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000c708b6887db46005da033501f8aebee72d191a5d",
       "peerStatus": "active",
-      "lockedAssetsUSD": 231.42617491772896
-    },
-    {
-      "status": "\ud83d\udfe1",
-      "assetOnAave": "no",
-      "asset": "USD\u20ae0",
-      "issuer": "USDT0",
-      "chain": "Ink",
-      "chainKey": "ink",
-      "remoteContract": "0x0200c29006150606b650577bbe7b6248f58470c1",
-      "sendContract": "0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
-      "dstOAppContract": "0x1cb6de532588fca4a21b7209de7c456af8434a65",
-      "requiredCount": 3,
-      "requiredDVNs": [
-        {
-          "name": "USDT0",
-          "ethAddress": "0x3b0531eb02ab4ad72e7a531180beef9493a00dd2",
-          "dstAddress": "0xdf44a1594d3d516f7cdfb4dc275a79a5f6e3db1d"
-        },
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0x174f2ba26f8adeafa82663bcf908288d5dbca649"
-        },
-        {
-          "name": "Canary",
-          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
-          "dstAddress": "0x1e4ce74ccf5498b19900649d9196e64bab592451"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 0.0,
-      "sendConfirmations": "65",
-      "recvConfirmations": "3000",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "yes",
-      "recvLibIsDefault": "no",
-      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
-      "recvLibPinned": "yes",
-      "peer": "0x0000000000000000000000001cb6de532588fca4a21b7209de7c456af8434a65",
-      "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 231.32573353233622
     },
     {
       "status": "\ud83d\udfe1",
@@ -3438,7 +3542,7 @@
       "recvLibPinned": "yes",
       "peer": "0xef3a1c7d6aa1a531336433e48d7b1d9b46c5bedc69f3db291df4e39bef4708e2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udfe1",
@@ -3485,7 +3589,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udfe1",
@@ -3532,7 +3636,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udfe1",
@@ -3579,7 +3683,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udfe1",
@@ -3626,7 +3730,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udfe1",
@@ -3673,7 +3777,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udfe1",
@@ -3720,7 +3824,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000021caef8a43163eea865baee23b9c2e327696a3bf",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udfe1",
@@ -3767,7 +3871,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000f40542a7b66ad7c68c459ee3679635d2fdb6df39",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udfe1",
@@ -3814,7 +3918,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000007e7866bc840aff9f517a49afdbfc9e7c7aba9a68",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udfe1",
@@ -3861,7 +3965,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000a1be1572b4beef24f812efdc58bdc41d56a0dab2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udfe1",
@@ -3908,7 +4012,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005421cf4288d8007d3c43ac4246eafce5b049e352",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udfe1",
@@ -3960,7 +4064,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4012,7 +4116,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4064,59 +4168,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
-    },
-    {
-      "status": "\ud83d\udfe1",
-      "assetOnAave": "no",
-      "asset": "sUSDe",
-      "issuer": "Ethena",
-      "chain": "Ink",
-      "chainKey": "ink",
-      "remoteContract": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
-      "sendContract": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
-      "dstOAppContract": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
-      "requiredCount": 4,
-      "requiredDVNs": [
-        {
-          "name": "Horizen",
-          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
-          "dstAddress": "0x395b14700812cccc38b8e64f0a06ce2045fe9ba3"
-        },
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0x174f2ba26f8adeafa82663bcf908288d5dbca649"
-        },
-        {
-          "name": "Canary",
-          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
-          "dstAddress": "0x1e4ce74ccf5498b19900649d9196e64bab592451"
-        },
-        {
-          "name": "Nethermind",
-          "ethAddress": "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5",
-          "dstAddress": "0x96ca3420bedd887cabdaba29c7dce6bad57af98b"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 0.0,
-      "sendConfirmations": "15",
-      "recvConfirmations": "20",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "yes",
-      "recvLibIsDefault": "no",
-      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
-      "recvLibPinned": "yes",
-      "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
-      "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4168,7 +4220,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4213,14 +4265,14 @@
         "name": "LayerZero Labs",
         "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
       },
-      "isCustom": "yes",
+      "isCustom": "",
       "sendLibIsDefault": "yes",
       "recvLibIsDefault": "no",
       "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4272,7 +4324,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4324,7 +4376,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4376,7 +4428,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4428,7 +4480,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4480,7 +4532,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000ad17da2f6ac76746ef261e835c50b2651ce36da8",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udfe1",
@@ -4532,7 +4584,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000a3d68b74bf0528fdd07263c60d6488749044914b",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udfe1",
@@ -4584,59 +4636,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000004c0599ae5a44757c0af6f9ec3b93da8976c150a",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
-    },
-    {
-      "status": "\ud83d\udfe1",
-      "assetOnAave": "no",
-      "asset": "weETH",
-      "issuer": "Ether.Fi",
-      "chain": "Ink",
-      "chainKey": "ink",
-      "remoteContract": "0xa3d68b74bf0528fdd07263c60d6488749044914b",
-      "sendContract": "0xcd2eb13d6831d4602d80e5db9230a57596cdca63",
-      "dstOAppContract": "0xa3d68b74bf0528fdd07263c60d6488749044914b",
-      "requiredCount": 4,
-      "requiredDVNs": [
-        {
-          "name": "Horizen",
-          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
-          "dstAddress": "0x395b14700812cccc38b8e64f0a06ce2045fe9ba3"
-        },
-        {
-          "name": "LayerZero Labs",
-          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
-          "dstAddress": "0x174f2ba26f8adeafa82663bcf908288d5dbca649"
-        },
-        {
-          "name": "Canary",
-          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
-          "dstAddress": "0x1e4ce74ccf5498b19900649d9196e64bab592451"
-        },
-        {
-          "name": "Nethermind",
-          "ethAddress": "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5",
-          "dstAddress": "0x96ca3420bedd887cabdaba29c7dce6bad57af98b"
-        }
-      ],
-      "optionalCount": 0,
-      "optionalDVNs": [],
-      "optionalThreshold": 0,
-      "totalSupplyUSD": 0.0,
-      "sendConfirmations": "45",
-      "recvConfirmations": "45",
-      "executor": {
-        "name": "LayerZero Labs",
-        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
-      },
-      "isCustom": "yes",
-      "sendLibIsDefault": "yes",
-      "recvLibIsDefault": "no",
-      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
-      "recvLibPinned": "yes",
-      "peer": "0x000000000000000000000000a3d68b74bf0528fdd07263c60d6488749044914b",
-      "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udfe1",
@@ -4688,7 +4688,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005a7facb970d094b6c7ff1df0ea68d99e6e73cbff",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udfe1",
@@ -4740,7 +4740,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000001f0a31698c4d065659b9bdc21b3610292a1c506",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udfe1",
@@ -4792,7 +4792,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000a3d68b74bf0528fdd07263c60d6488749044914b",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udfe1",
@@ -4844,7 +4844,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000c1fa6e2e8667d9be0ca938a54c7e0285e9df924a",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udd34",
@@ -5000,7 +5000,7 @@
       "recvLibPinned": "default",
       "peer": "0xc7ae4ab742f6b0b203f6710c87677005bc45ad01c7ae4ab742f6b0b203f6710c87677005bc45ad01",
       "peerStatus": "active",
-      "lockedAssetsUSD": 556.6658043368465
+      "lockedAssetsUSD": 580.5348449218706
     },
     {
       "status": "\ud83d\udd34",
@@ -5042,7 +5042,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000b835f07a2a54c0e80c1f585e5b6dd732816da3f",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1461.5960533568948
+      "lockedAssetsUSD": 1451.8970259230227
     },
     {
       "status": "\ud83d\udd34",
@@ -5084,7 +5084,7 @@
       "recvLibPinned": "yes",
       "peer": "0x862e963aa505178045486857800095c82c4f44b5c039594c7be33f4e1649af93",
       "peerStatus": "active",
-      "lockedAssetsUSD": 13833315.229203641
+      "lockedAssetsUSD": 13741518.522718774
     },
     {
       "status": "\ud83d\udd34",
@@ -5126,7 +5126,7 @@
       "recvLibPinned": "default",
       "peer": "0x000000000000000000000000eed9de5e41b53d1c8fab8aab4b0e446f828c1483",
       "peerStatus": "active",
-      "lockedAssetsUSD": 6.709303847864946
+      "lockedAssetsUSD": 6.6962896254171405
     },
     {
       "status": "\ud83d\udd34",
@@ -5168,7 +5168,7 @@
       "recvLibPinned": "default",
       "peer": "0x000000000000000000000000eed9de5e41b53d1c8fab8aab4b0e446f828c1483",
       "peerStatus": "active",
-      "lockedAssetsUSD": 6.709303847864946
+      "lockedAssetsUSD": 6.6962896254171405
     },
     {
       "status": "\ud83d\udd34",
@@ -5210,7 +5210,7 @@
       "recvLibPinned": "default",
       "peer": "0x000000000000000000000000e41228a455700caf09e551805a8ab37caa39d08c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 6.709303847864946
+      "lockedAssetsUSD": 6.6962896254171405
     },
     {
       "status": "\ud83d\udd34",
@@ -5247,12 +5247,12 @@
       },
       "isCustom": "yes",
       "sendLibIsDefault": "no",
-      "recvLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
       "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
-      "recvLibPinned": "default",
+      "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000909dbde1ebe906af95660033e478d59efe831fed",
       "peerStatus": "active",
-      "lockedAssetsUSD": 75.54698258088641
+      "lockedAssetsUSD": 75.40044200695175
     },
     {
       "status": "\ud83d\udd34",
@@ -5294,7 +5294,7 @@
       "recvLibPinned": "default",
       "peer": "0x9876880bee04a9020e619b1be124ee307e03ca94bab4f32a7a22cfd2ccee3927",
       "peerStatus": "active",
-      "lockedAssetsUSD": 6.709303847864946
+      "lockedAssetsUSD": 6.6962896254171405
     },
     {
       "status": "\ud83d\udd34",
@@ -5336,7 +5336,7 @@
       "recvLibPinned": "default",
       "peer": "0x656d91ab3d464c05cd1345ce21c78e36140a36491e102fbb08c58af73aafe89b",
       "peerStatus": "active",
-      "lockedAssetsUSD": 75.54698258088641
+      "lockedAssetsUSD": 75.40044200695175
     },
     {
       "status": "\ud83d\udd34",
@@ -5384,6 +5384,110 @@
       "peer": "0x932b9c090c43c0b5b1c2f23a681db44a0dd86290a18d285c1969a08bb1164dca",
       "peerStatus": "active",
       "lockedAssetsUSD": 0.0
+    },
+    {
+      "status": "\ud83d\udd34",
+      "assetOnAave": "-",
+      "asset": "SUSDE",
+      "issuer": "Ethena",
+      "chain": "Tempo",
+      "chainKey": "tempo",
+      "remoteContract": "0x20c000000000000000000000bd95bfb69fbe6ce3",
+      "sendContract": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+      "dstOAppContract": "0x100c123770be9015321a9fcfa4ae3e77dcb2cf1a",
+      "requiredCount": 4,
+      "requiredDVNs": [
+        {
+          "name": "Horizen",
+          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
+          "dstAddress": "0x97faa2a9c9bf8b4082b175a5b894ce6bac6697a8"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x76faff60799021b301b45dc1bbede53f261f9961"
+        },
+        {
+          "name": "Canary",
+          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
+          "dstAddress": "0xb30b5b27cb23356de1d3100e0e120d481da97b1f"
+        },
+        {
+          "name": "Nethermind",
+          "ethAddress": "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5",
+          "dstAddress": "0x0d875bd6c833cedef7fca4fe154d023cdb8eb1cb"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 0.0,
+      "sendConfirmations": "15",
+      "recvConfirmations": "20",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
+      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
+      "recvLibPinned": "yes",
+      "peer": "0x000000000000000000000000100c123770be9015321a9fcfa4ae3e77dcb2cf1a",
+      "peerStatus": "active",
+      "lockedAssetsUSD": 677523694.3424094
+    },
+    {
+      "status": "\ud83d\udd34",
+      "assetOnAave": "-",
+      "asset": "USDE",
+      "issuer": "Ethena",
+      "chain": "Tempo",
+      "chainKey": "tempo",
+      "remoteContract": "0x20c0000000000000000000002f52d5cc21a3207b",
+      "sendContract": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
+      "dstOAppContract": "0xf8b6aa0cee4e1ad87ee259dab5e556eb62297d7f",
+      "requiredCount": 4,
+      "requiredDVNs": [
+        {
+          "name": "Horizen",
+          "ethAddress": "0x380275805876ff19055ea900cdb2b46a94ecf20d",
+          "dstAddress": "0x97faa2a9c9bf8b4082b175a5b894ce6bac6697a8"
+        },
+        {
+          "name": "LayerZero Labs",
+          "ethAddress": "0x589dedbd617e0cbcb916a9223f4d1300c294236b",
+          "dstAddress": "0x76faff60799021b301b45dc1bbede53f261f9961"
+        },
+        {
+          "name": "Canary",
+          "ethAddress": "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd",
+          "dstAddress": "0xb30b5b27cb23356de1d3100e0e120d481da97b1f"
+        },
+        {
+          "name": "Nethermind",
+          "ethAddress": "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5",
+          "dstAddress": "0x0d875bd6c833cedef7fca4fe154d023cdb8eb1cb"
+        }
+      ],
+      "optionalCount": 0,
+      "optionalDVNs": [],
+      "optionalThreshold": 0,
+      "totalSupplyUSD": 0.0,
+      "sendConfirmations": "15",
+      "recvConfirmations": "20",
+      "executor": {
+        "name": "LayerZero Labs",
+        "address": "0x173272739bd7aa6e4e214714048a9fe699453059"
+      },
+      "isCustom": "yes",
+      "sendLibIsDefault": "yes",
+      "recvLibIsDefault": "no",
+      "recvLib": "0xc02ab410f0734efa3f14628780e6e695156024c2",
+      "recvLibPinned": "yes",
+      "peer": "0x000000000000000000000000f8b6aa0cee4e1ad87ee259dab5e556eb62297d7f",
+      "peerStatus": "active",
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -5477,7 +5581,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000a755782a71bb7ae05ce9b74646ddb52206b96a65",
       "peerStatus": "active",
-      "lockedAssetsUSD": 987871.7864107151
+      "lockedAssetsUSD": 951394.2046040546
     },
     {
       "status": "\ud83d\udd34",
@@ -5519,7 +5623,7 @@
       "recvLibPinned": "yes",
       "peer": "0x9825dc0cbeaf22836931c00cb891592f0a96d0dc6a65a4c67992b01e0db8d122",
       "peerStatus": "active",
-      "lockedAssetsUSD": 56266437.68437583
+      "lockedAssetsUSD": 55661906.917167775
     },
     {
       "status": "\ud83d\udd34",
@@ -5566,7 +5670,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000cb768e263fb1c62214e7cab4aa8d036d76dc59cc",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -5613,7 +5717,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000001a594d5d5d1c426281c1064b07f23f57b2716b61",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -5660,7 +5764,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000056fe74a2e3b484b921c447357203431a3485cc60",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -5707,7 +5811,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000edaba024be4d87974d5ab11c6dd586963cccb027",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -5749,7 +5853,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000003a08f76772e200653bb55c2a92998daca62e0e97",
       "peerStatus": "active",
-      "lockedAssetsUSD": 19622109.32249131
+      "lockedAssetsUSD": 17486184.015500467
     },
     {
       "status": "\ud83d\udd34",
@@ -5796,7 +5900,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000003dc96399109df5ceb2c226664a086140bd0379cb",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -5843,7 +5947,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000c57efa1c7113d98bda6f9f249471704ece5dd84a",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -5890,7 +5994,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000567287d2a9829215a37e3b88843d32f9221e7588",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -5937,7 +6041,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000904861a24f30ec96ea7cfc3be9ea4b476d237e98",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -5984,7 +6088,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000009151434b16b9763660705744891fa906f660ecc5",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -6031,7 +6135,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000003f82943338a8a76c35bfa0c1828aa27fd43a34e4",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -6073,7 +6177,7 @@
       "recvLibPinned": "yes",
       "peer": "0xfc35c7d850a775913767c2f2e08e606f11635473ee9100dda1c4e81aa35d89a9",
       "peerStatus": "active",
-      "lockedAssetsUSD": 19622109.32249131
+      "lockedAssetsUSD": 17486184.015500467
     },
     {
       "status": "\ud83d\udd34",
@@ -6115,7 +6219,7 @@
       "recvLibPinned": "yes",
       "peer": "0x1ddf580052174ed1dd0d66c35bfdc1a5fcc69af4f4ae36154b13dcfc6c14a35f",
       "peerStatus": "active",
-      "lockedAssetsUSD": 19622109.32249131
+      "lockedAssetsUSD": 17486184.015500467
     },
     {
       "status": "\ud83d\udd34",
@@ -6162,7 +6266,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000af37e8b6c9ed7f6318979f56fc287d76c30847ff",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -6209,7 +6313,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000c07be8994d035631c36fb4a89c918cefb2f03ec3",
       "peerStatus": "active",
-      "lockedAssetsUSD": 3623265374.535895
+      "lockedAssetsUSD": 3540288305.9248257
     },
     {
       "status": "\ud83d\udd34",
@@ -6261,7 +6365,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6313,7 +6417,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6365,7 +6469,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000080f981abc18a48cfdbde5556f9b72e6a726f0ff3",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6417,7 +6521,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6469,7 +6573,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6521,7 +6625,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6573,7 +6677,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6625,7 +6729,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6677,7 +6781,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6729,7 +6833,7 @@
       "recvLibPinned": "yes",
       "peer": "0x3aad2be6167477f2fc6864f5623e3791aa2f25cbcb5207a202ff3c383bdc379f",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6781,7 +6885,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6833,7 +6937,7 @@
       "recvLibPinned": "yes",
       "peer": "0x23a676145f8dee3632f722aac50392f22cf0b4be8f624e038279a6f5005fb669",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6885,7 +6989,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000005d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1202327959.7795815
+      "lockedAssetsUSD": 1257109285.9735923
     },
     {
       "status": "\ud83d\udd34",
@@ -6932,7 +7036,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -6979,7 +7083,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7026,7 +7130,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7073,7 +7177,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000717dae2baf7656be9a9b01dee31d571a9d4c9579",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7120,7 +7224,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000d7d4d91d64a6061fa00a94e2b3a2d2a5fb677849",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7167,7 +7271,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7194,7 +7298,7 @@
         {
           "name": "BitGo",
           "ethAddress": "0xc9ca319f6da263910fd9b037ec3d817a814ef3d8",
-          "dstAddress": "0xe40d78243074711e21ca5290ee190062bdce09b5"
+          "dstAddress": "0x26cd5abadf7ec3f0f02b48314bfca6b2342cddd4"
         }
       ],
       "optionalCount": 0,
@@ -7214,7 +7318,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7261,7 +7365,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000c5098b3ca516784323872f17235fa074e167d3d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7308,7 +7412,7 @@
       "recvLibPinned": "yes",
       "peer": "0x069ac468d7ad7324c2807d9422630c650729a46121f023b11a647edf173562f9",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7355,7 +7459,7 @@
       "recvLibPinned": "yes",
       "peer": "0xf028303ea0d8dc2ac3ec17c696ca04f097d0c9af01e8a6607dc28242bd393a8c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7402,7 +7506,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7449,7 +7553,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7496,7 +7600,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000000555e30da8f98308edb960aa94c0db47230d2b9c",
       "peerStatus": "active",
-      "lockedAssetsUSD": 140534610.48481724
+      "lockedAssetsUSD": 141427727.50899184
     },
     {
       "status": "\ud83d\udd34",
@@ -7543,7 +7647,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000004e41cfc3f3b19e29e323d2c36f8f202a1e151daf",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udd34",
@@ -7590,7 +7694,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000021caef8a43163eea865baee23b9c2e327696a3bf",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udd34",
@@ -7637,7 +7741,7 @@
       "recvLibPinned": "yes",
       "peer": "0x07d14aef03aacfde37c37ac84805f0265d8936e95426b86af95b082f5a567f00",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udd34",
@@ -7684,7 +7788,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000d8479f87686ed263d00ca7505f86327dbed4171a",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udd34",
@@ -7726,7 +7830,7 @@
       "recvLibPinned": "yes",
       "peer": "0x90d9ff1c7814705fcc74f8b7598476d65f3b9536fc132729b0606f0be82e617f",
       "peerStatus": "active",
-      "lockedAssetsUSD": 87710563.88309325
+      "lockedAssetsUSD": 87720874.68265134
     },
     {
       "status": "\ud83d\udd34",
@@ -7768,7 +7872,7 @@
       "recvLibPinned": "default",
       "peer": "0xaa798bf5ec09b6e3bc059ea4d36d4ca53e063ef7aa798bf5ec09b6e3bc059ea4d36d4ca53e063ef7",
       "peerStatus": "active",
-      "lockedAssetsUSD": 1295.7122182480505
+      "lockedAssetsUSD": 1295.3283347586757
     },
     {
       "status": "\ud83d\udd34",
@@ -7820,7 +7924,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -7872,7 +7976,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -7924,7 +8028,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -7976,7 +8080,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -8028,7 +8132,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -8080,7 +8184,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -8132,7 +8236,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -8184,7 +8288,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -8236,7 +8340,7 @@
       "recvLibPinned": "yes",
       "peer": "0xb2953a744464aac979ffe7b20a9612cc33e9ba1c687e5eb7336f8e5c9c89aafe",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -8288,7 +8392,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -8340,7 +8444,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
       "peerStatus": "active",
-      "lockedAssetsUSD": 686011147.8053433
+      "lockedAssetsUSD": 677523694.3424094
     },
     {
       "status": "\ud83d\udd34",
@@ -8392,7 +8496,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000007dcc39b4d1c53cb31e1abc0e358b43987fef80f7",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udd34",
@@ -8444,7 +8548,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000004c0599ae5a44757c0af6f9ec3b93da8976c150a",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udd34",
@@ -8496,7 +8600,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000a3d68b74bf0528fdd07263c60d6488749044914b",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udd34",
@@ -8548,7 +8652,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000004c0599ae5a44757c0af6f9ec3b93da8976c150a",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udd34",
@@ -8600,7 +8704,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000a3d68b74bf0528fdd07263c60d6488749044914b",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udd34",
@@ -8652,7 +8756,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000007dcc39b4d1c53cb31e1abc0e358b43987fef80f7",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udd34",
@@ -8704,7 +8808,7 @@
       "recvLibPinned": "yes",
       "peer": "0x00000000000000000000000060a08269e5f3406d8fd7892567d53188c7f75009",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udd34",
@@ -8756,7 +8860,7 @@
       "recvLibPinned": "yes",
       "peer": "0x000000000000000000000000a6cb988942610f6731e664379d15ffcfbf282b44",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     },
     {
       "status": "\ud83d\udd34",
@@ -8808,7 +8912,7 @@
       "recvLibPinned": "yes",
       "peer": "0x0000000000000000000000007dcc39b4d1c53cb31e1abc0e358b43987fef80f7",
       "peerStatus": "active",
-      "lockedAssetsUSD": 361447428.19688874
+      "lockedAssetsUSD": 315259354.94461983
     }
   ],
   "whitelist": [
@@ -8829,5 +8933,5 @@
     "USDT0",
     "wBTC"
   ],
-  "lastUpdated": "2026-05-09 01:14 UTC"
+  "lastUpdated": "2026-05-11 17:06 UTC"
 }
