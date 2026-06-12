@@ -136,7 +136,8 @@ footer {
   <th>Market</th>
   <th>Asset</th>
   <th>Issuer</th>
-  <th>OFT Address (Eth)</th>
+  <th>OFT Lockbox</th>
+  <th>Mechanism</th>
   <th>Required DVNs</th>
   <th>DVN Providers</th>
   <th>Recv Library Pinned</th>
@@ -163,7 +164,7 @@ const EXPLORERS = {
   base:            'https://basescan.org/address/',
   polygon:         'https://polygonscan.com/address/',
   bsc:             'https://bscscan.com/address/',
-  avalanche:       'https://snowtrace.io/address/',
+  avalanche:       'https://snowscan.xyz/address/',
   mantle:          'https://mantlescan.xyz/address/',
   plasma:          'https://plasmascan.to/address/',
   linea:           'https://lineascan.build/address/',
@@ -293,14 +294,20 @@ let DATA = [];
 
 function rowHtml(d) {
   const isEthNative = (d.chain === 'Ethereum Core' || d.chain === 'Ethereum Lido');
-  const dvns = (d.requiredDVNs || []).map(x => dvnLink(d.chain, x)).join(', ');
+  // Required DVNs render in normal color; optional DVNs in a muted shade
+  // so the reader can tell which providers form the mandatory quorum vs
+  // the optional set on a single glance.
+  const reqDvnList = (d.requiredDVNs || []).map(x => dvnLink(d.chain, x));
+  const optDvnList = (d.optionalDVNs || []).map(x =>
+    '<span style="opacity:0.55" title="Optional DVN (threshold ' + (d.optionalThreshold || 0) + '/' + (d.optionalCount || 0) + ')">' + dvnLink(d.chain, x) + '</span>'
+  );
+  const dvns = [...reqDvnList, ...optDvnList].join(', ');
   const dvnsCell = isEthNative && d.dvnFromBridge && dvns
     ? dvns + ' <span title="OFT bridge configuration; the native asset issuer may differ from the OFT issuer (e.g. Tether vs USDT0)" style="color:var(--muted);font-weight:700">*</span>'
     : dvns;
   const optBlurb = (d.optionalCount > 0)
     ? ' <span class="tag" title="Optional set: ' + d.optionalCount + ' DVNs, threshold ' + d.optionalThreshold + '">+ ' + d.optionalThreshold + '/' + d.optionalCount + ' opt</span>'
     : '';
-  const ofturl = ethExplorer(d.sendContract);
   // Recv-lib pinning. yes (pinned) -> green check label; default -> red X
   // 'LZ Default'; empty/error/eth-native -> em-dash (concept doesn't apply
   // to Eth Core/Lido self-rows since there's no LZ Eth->Eth route).
@@ -315,13 +322,32 @@ function rowHtml(d) {
     ? supply + ' <span title="indirect exposure: native asset on Aave Eth Core/Lido" style="color:var(--muted);font-weight:700">*</span>'
     : supply;
   const lockedCell = fmtUsd(d.lockedAssetsUSD);
+  // Mechanism: derived from lockedAssetsUSD. >0 means the OFT is an
+  // OFTAdapter holding the canonical underlying (lock-and-mint), 0/empty
+  // means it's a NativeOFT that burns/mints supply directly.
+  const isLockAndMint = !!(d.lockedAssetsUSD && d.lockedAssetsUSD > 0);
+  const mechanism = isLockAndMint ? 'Lock-and-Mint' : 'Burn-and-Mint';
+  // OFT Lockbox cell. For burn-and-mint OFTs there is no lockbox - show
+  // '-'. For lock-and-mint, use `lockboxAddress`/`lockboxChain` if the
+  // builder set them (CAKE is on BSC), otherwise fall back to the
+  // Ethereum sendContract.
+  let lockboxCell;
+  if (!isLockAndMint) {
+    lockboxCell = '<td><span style="color:var(--muted)">-</span></td>';
+  } else {
+    const lbAddr  = (d.lockboxAddress || d.sendContract || '').toLowerCase();
+    const lbChain = d.lockboxChain || 'ethereum';
+    const url     = explorer(lbChain, lbAddr) || ethExplorer(lbAddr);
+    lockboxCell = '<td><a href="' + url + '" target="_blank" rel="noopener" class="addr">'
+                + shortAddr(lbAddr) + '</a></td>';
+  }
   return '<tr>'
        + '<td><span class="dot ' + statusClass(d.status) + '">' + (d.status || '') + '</span></td>'
-       + '<td>' + d.chain + '</td>'
+       + marketCell(d)
        + '<td>' + assetLink(d.chain, d.remoteContract, d.asset) + '</td>'
        + '<td>' + d.issuer + '</td>'
-       + '<td><a href="' + ofturl + '" target="_blank" rel="noopener" class="addr">'
-       +   shortAddr(d.sendContract) + '</a></td>'
+       + lockboxCell
+       + '<td>' + mechanism + '</td>'
        + '<td>' + (d.requiredCount || 0) + '/0' + optBlurb + '</td>'
        + '<td class="dvn-list">' + dvnsCell + '</td>'
        + '<td>' + pin + '</td>'
@@ -358,8 +384,30 @@ function pinLabel(p) {
   return '<span style="color:var(--muted)">-</span>';
 }
 
+// Market column: chain name + LZ V2 endpoint id on a second line.
+// Eth Core/Lido self-rows have eid 30101 (Ethereum) by construction but
+// they aren't real LZ destinations - skip the eid line for them.
+function marketCell(d) {
+  const isEthNative = (d.chain === 'Ethereum Core' || d.chain === 'Ethereum Lido');
+  if (isEthNative || !d.remoteEid) return '<td>' + d.chain + '</td>';
+  return '<td>' + d.chain
+       + '<div style="color:var(--muted);font-size:11px;margin-top:2px;">eid '
+       + d.remoteEid + '</div></td>';
+}
+
 function dvnListHtml(chain, dvns) {
   return (dvns || []).map(x => dvnLink(chain, x)).join(', ');
+}
+
+// Render required + optional DVNs for one pathway, with optional names
+// shown in a muted shade so the reader can tell which providers are
+// mandatory vs. part of the opt-in threshold set.
+function dvnListHtmlWithOpt(chain, reqDvns, optDvns, optThreshold, optCount) {
+  const req = (reqDvns || []).map(x => dvnLink(chain, x));
+  const opt = (optDvns || []).map(x =>
+    '<span style="opacity:0.55" title="Optional DVN (threshold ' + (optThreshold || 0) + '/' + (optCount || 0) + ')">' + dvnLink(chain, x) + '</span>'
+  );
+  return [...req, ...opt].join(', ');
 }
 
 function mergedRowHtml(d) {
@@ -371,27 +419,42 @@ function mergedRowHtml(d) {
   // Issuers - dedup, ", "
   const issuerCell = [...new Set(rows.map(r => r.issuer))].join(', ');
 
-  // OFT addresses - one short-link per OFT, ", "
-  const oftCell = rows.map(r =>
-    '<a href="' + ethExplorer(r.sendContract) + '" target="_blank" rel="noopener" class="addr">'
-    + shortAddr(r.sendContract) + '</a>'
-  ).join(', ');
+  // OFT Lockbox addresses - one short-link per OFT, ", ". For burn-and-
+  // mint rows show '-'; for lock-and-mint, use lockboxAddress/lockboxChain
+  // if set (CAKE -> BSC) else fall back to Ethereum sendContract.
+  const lockboxParts = rows.map(r => {
+    const rowLockAndMint = !!(r.lockedAssetsUSD && r.lockedAssetsUSD > 0);
+    if (!rowLockAndMint) return '<span style="color:var(--muted)">-</span>';
+    const lbAddr  = (r.lockboxAddress || r.sendContract || '').toLowerCase();
+    const lbChain = r.lockboxChain || 'ethereum';
+    const url     = explorer(lbChain, lbAddr) || ethExplorer(lbAddr);
+    return '<a href="' + url + '" target="_blank" rel="noopener" class="addr">'
+         + shortAddr(lbAddr) + '</a>';
+  });
+  const oftCell = [...new Set(lockboxParts)].join(', ');
 
   // Required-count cell ("N/0"). One entry per row, no dedup - the user
   // wants the count repeated even when all OFTs in the group agree, to
   // avoid implying a single OFT.
   const reqCell = rows.map(r => (r.requiredCount || 0) + '/0').join(', ');
 
-  // DVN providers - each row has a list. Canonical signature = sorted
-  // ethAddresses. If all rows share the same signature, render one list;
-  // otherwise render each row's list separated by "; ".
-  const sig = r => (r.requiredDVNs || []).map(x => (x.ethAddress || '').toLowerCase()).sort().join(',');
+  // DVN providers - each row has a required + optional set. Canonical
+  // signature = sorted (req + opt) ethAddresses. If all rows share the
+  // same signature, render one list; otherwise render each row's list
+  // separated by "; ". Required DVNs in normal color, optional DVNs in
+  // a muted shade.
+  const sig = r => [
+    ...(r.requiredDVNs || []).map(x => 'R:' + (x.ethAddress || '').toLowerCase()),
+    ...(r.optionalDVNs  || []).map(x => 'O:' + (x.ethAddress || '').toLowerCase()),
+  ].sort().join(',');
   const sigs = [...new Set(rows.map(sig))];
   let dvnsCell;
   if (sigs.length === 1) {
-    dvnsCell = dvnListHtml(rows[0].chain, rows[0].requiredDVNs);
+    dvnsCell = dvnListHtmlWithOpt(rows[0].chain, rows[0].requiredDVNs,
+      rows[0].optionalDVNs, rows[0].optionalThreshold, rows[0].optionalCount);
   } else {
-    dvnsCell = rows.map(r => dvnListHtml(r.chain, r.requiredDVNs)).join('; ');
+    dvnsCell = rows.map(r => dvnListHtmlWithOpt(r.chain, r.requiredDVNs,
+      r.optionalDVNs, r.optionalThreshold, r.optionalCount)).join('; ');
   }
   // Asterisk note when any row's DVN config was borrowed from a sibling.
   if (isEthNative && rows.some(r => r.dvnFromBridge) && dvnsCell) {
@@ -418,13 +481,17 @@ function mergedRowHtml(d) {
   }
   const lockedTotal = [...oftLocked.values()].reduce((a, b) => a + b, 0);
   const lockedCell = fmtUsd(lockedTotal);
+  // Mechanism: lock-and-mint when any of the underlying OFTs in the
+  // merge group hold a non-zero locked amount; burn-and-mint when none.
+  const mechanism = (lockedTotal > 0) ? 'Lock-and-Mint' : 'Burn-and-Mint';
 
   return '<tr>'
        + '<td><span class="dot ' + statusClass(d.status) + '">' + (d.status || '') + '</span></td>'
-       + '<td>' + d.chain + '</td>'
+       + marketCell(d)
        + '<td>' + assetLink(d.chain, d.remoteContract, d.asset) + '</td>'
        + '<td>' + issuerCell + '</td>'
        + '<td>' + oftCell + '</td>'
+       + '<td>' + mechanism + '</td>'
        + '<td>' + reqCell + '</td>'
        + '<td class="dvn-list">' + dvnsCell + '</td>'
        + '<td>' + pinCell + '</td>'
